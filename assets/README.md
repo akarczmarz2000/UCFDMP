@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.1 - Header Completed
+#User Centric Frontend Development Milestone Project - Gamer Website v0.2 - Footer Completed
 
 This site is to help fans, potential fans and anyone else who maybe interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -36,7 +36,7 @@ These are the users I am thinking off:-
     * Has a logo that takes you back to the home page
     * Has a link to the gamers social pages
     * Has quick links to areas on the page, only visible on navigation when on that page
-	* Has links to social pages for the site owner
+	* Has links to site owners terms of use and privacy policy
 	* Has a link to the feedback form and the forum
 3. About page
     * Has some family and personal history
@@ -54,16 +54,18 @@ These are the users I am thinking off:-
 ###Existing Features
 
 1. Header and Footer
-    * Has a navigation to all pages
-    * Has a login or signup model
-    * Has a logo that goes back to the home page
+    * Has a navigation to all the pages
+    * Has a login or signup modal
+    * Has a logo that takes you back to the home page
+    * Has a link to the gamers social pages
+	* Has links to site owners terms of use and privacy policy
+	* Has a link to the feedback form and the forum
 
 ###Features Left to Implement
 
 1. A home page
     * Has diffent parts shortened down from other pages to give a small overview of the site
 2. Header and Footer
-    * Has a link to the gamers social pages
     * Has quick links to areas on the page, only visible on navigation when on that page
 3. About page
     * Has some family and personal history
@@ -125,3 +127,10 @@ These are the users I am thinking off:-
         * Closing the modal on the phone
             * The close button was easy to click
             * The website ran as expected after closing the modal no issues enchountered
+			
+3. Social Links
+	* Goes to the correct address
+		* The hyperlinks goes to the correct pages
+	* Images and Account names look good on Phone
+	* Images and Account names look good on Tablet
+	* Images and Account names look good on Computer

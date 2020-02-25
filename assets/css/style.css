@@ -25,11 +25,12 @@
 }
 
 .logo{
-    background: url("");
+    background: url("../img/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 75px;
+    height: 190px;
+	width: 190px;
     margin: 10px;
 }
 
@@ -89,6 +90,7 @@ header{
 
 .hvr-sweep-to-bottom:before{
     background: #404040;
+	height: 135px;
 }
 
 /*Button*/
@@ -106,23 +108,76 @@ header{
     margin-bottom: 10px;
 }
 
-/*Model*/
+/*Modal*/
 
 .btn--style{
     font-weight: bold;
     border-radius: 23px;
     width: 150px;
     display: block;
-    margin-right: auto;
-    margin-left: 0;
+    margin-right: 0;
+    margin-left: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+
+
+/*Footer*/
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    margin: 0;
+}
+
+.small-print{
+	font-size: 15px;
+}
+
+.icon{
+    padding-bottom: 15px;
+}
+
+.icon li a i{
+    width: 40px;
+    height: 40px;
+    padding: 16px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.icon li a i:hover{
+    background: #404040;
+}
+
+#footer-details{
+    padding: 20px;
+}
+
 /*Media Queries*/
+
 @media (max-width: 600px){
     .hvr-sweep-to-bottom:before{
     background: #404040;
     height: 90px;
-}
+	}
+	.small-text{
+		font-size: 12px;
+	}
+	.small-header{
+		font-size: 14px;
+	}
+	.small-move{
+		margin-left: 95px;
+	}
+	.model-content{
+		width: 350px;
+	}
 }
