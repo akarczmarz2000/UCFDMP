@@ -1,1 +1,128 @@
+/*Colors*/
 
+.btn--purple{
+    color: #fff500;
+    background-color: #4600b8;
+    border-color: #4600b8;
+}
+
+.btn--purple:hover,
+.btn--purple:active,
+.btn--purple:focus,
+.btn--purple:active:focus{
+    background-color: #7119FF;
+    border-color: #7119FF;
+    color: #B3AB00;
+}
+
+/*Heading*/
+.heading{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fafafa;
+}
+
+.logo{
+    background: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75px;
+    margin: 10px;
+}
+
+header{
+    margin: 0;
+    background-color: #202020;
+}
+
+.list-inline-item:not(:last-child){
+    margin: 0;
+}
+
+.navcontainer{
+    font-size: 0;
+}
+
+#nav li{
+    padding: 0;
+    font-size: 13px;
+}
+
+#nav{
+    margin: 0;
+}
+
+.navitem{
+    height: 90px;
+    text-align: center;
+    padding: 0;
+}
+
+.navitem a{
+    width: 100%;
+    text-decoration: none;
+    height: 120px;
+    color: #fafafa;
+}
+
+.navitem a i{
+    padding-top: 20px;
+    display: block;
+    font-size: 25px;
+    color: #fafafa;
+}
+
+.navitem a span{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*Hoover*/
+
+.hvr-sweep-to-bottom:before{
+    background: #404040;
+}
+
+/*Button*/
+
+
+
+.btn--cta{
+    font-weight: bold;
+    border-radius: 23px;
+    width: 150px;
+    display: block;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Model*/
+
+.btn--style{
+    font-weight: bold;
+    border-radius: 23px;
+    width: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Media Queries*/
+@media (max-width: 600px){
+    .hvr-sweep-to-bottom:before{
+    background: #404040;
+    height: 90px;
+}
+}
