@@ -108,6 +108,56 @@ header{
     margin-bottom: 10px;
 }
 
+.pos{
+	display: none;
+}
+
+/*Body*/
+
+.area-title{
+	text-decoration: underline;
+	margin-top: 10px;
+	color: #ef0ac1;
+	background: url("../img/title-background.jpg");
+	background-position: center;
+}
+
+.area-title h1{
+	margin-left: 50px;
+}
+
+.picture{
+	background: url("../img/background.jpg");
+	background-position: center;
+	background-size: cotain;
+}
+
+.picture2{
+	background: url("../img/background2.jpg");
+	background-position: center;
+	background-size: cotain;
+}
+
+.games-left{
+	width: 500px;
+	margin: 5px;
+	border-radius: 5%;
+	border: 10px;
+	border-style: solid;
+	border-color: #202020;
+	float: left;
+}
+
+.games-right{
+	width: 500px;
+	margin: 5px;
+	border-radius: 5%;
+	border: 10px;
+	border-style: solid;
+	border-color: #202020;
+	float: right;
+}
+
 /*Modal*/
 
 .btn--style{
@@ -163,7 +213,7 @@ footer {
 
 /*Media Queries*/
 
-@media (max-width: 600px){
+@media (max-width: 640px){
     .hvr-sweep-to-bottom:before{
     background: #404040;
     height: 90px;
@@ -174,10 +224,39 @@ footer {
 	.small-header{
 		font-size: 14px;
 	}
-	.small-move{
-		margin-left: 95px;
-	}
 	.model-content{
 		width: 350px;
+	}
+	.logo,
+	.games-right,
+	.games-left{
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 360px;
+		background-size: contain;
+	}
+	.sm-center{
+		text-align: center;
+		margin: 3px;
+	}
+	.small-move{
+		display: none;
+	}
+	.pos,
+	.area-title h1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.icon h6{
+		font-size: 11px;
+	}
+	.icon li a i{
+		padding: 12px 0;
+		font-size: 15px;
+	    width: 30px;
+        height: 30px;
 	}
 }

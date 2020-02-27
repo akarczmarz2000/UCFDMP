@@ -1,4 +1,8 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.2 - Footer Completed
+#User Centric Frontend Development Milestone Project - Gamer Website v0.21 - Gaming Updated
+
+#v0.21 - Gaming Updated
+In this version several game entries had been added, with images. 
+Updates to the phone view of the website.
 
 This site is to help fans, potential fans and anyone else who maybe interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -60,6 +64,8 @@ These are the users I am thinking off:-
     * Has a link to the gamers social pages
 	* Has links to site owners terms of use and privacy policy
 	* Has a link to the feedback form and the forum
+2. Gaming page
+    * Has a history of the gmaes played and finished
 
 ###Features Left to Implement
 
@@ -72,7 +78,6 @@ These are the users I am thinking off:-
     * Has a photo of the gamer
     * Has personal stories
 4. Gaming page
-    * Has a history of the gmaes played and finished
     * Shows which games have recorded gameplay and what ones are intended for the future
     * Has some of the achievement that the gamer is proud off and some they are working threw, also if possible links to game pages for their achievements
     * Has a rating of there skills compaired to each other
@@ -132,5 +137,28 @@ These are the users I am thinking off:-
 	* Goes to the correct address
 		* The hyperlinks goes to the correct pages
 	* Images and Account names look good on Phone
+		* They don't quite look right on all of them, Icon for Facebook and Twitch slips under the others
+			* To fix this I have changed size of the Icons and the words at screen break point for the phone
 	* Images and Account names look good on Tablet
+		*They look all okay
 	* Images and Account names look good on Computer
+		*They look all okay
+
+4. Navigation Look on Phone
+	* Does the Login and Sign Up look okay on the phone 
+		* It sits to the left and looks odd
+			* I hid the normal one on the screen breakpoint phone and added one at the top of the page that becomes visable at screen breakpoint
+			* This one is designed to site outside of the navigation grid so sites evenly over the top of the page whichs works well on phone
+	* Navigation tabs looks okay on phone
+		* It's designed to split into 4 blocks which sit next to each other with the title above that
+	* Does the logo look okay
+		* It sits to one side of the title in an odd proportion
+			* Fixed this by changing its position beyond breakpoint to be relative to the center of the screen and to be a fixed size
+			* The image doesn't fit properly where it is
+				* Change the sizing attribute to contain so that it fits right beyond breakpoint
+	
+##Reference
+1. Wikipedia
+	* Used for content on the game page
+2. Fandom
+	* Used for content on the game page
