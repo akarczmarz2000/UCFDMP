@@ -1,4 +1,7 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.21 - Gaming Updated
+#User Centric Frontend Development Milestone Project - Gamer Website v0.22 - Gaming Updated
+
+#v0.22 - Gaming Updated
+In this version the level I which I view my skills has been represented in progress bars which are compared to each other.
 
 #v0.21 - Gaming Updated
 In this version several game entries had been added, with images. 
@@ -47,7 +50,7 @@ These are the users I am thinking off:-
     * Has a photo of the gamer
     * Has personal stories
 4. Gaming page
-    * Has a history of the gmaes played and finished
+    * Has a history of the games played and finished
     * Shows which games have recorded gameplay and what ones are intended for the future
     * Has some of the achievement that the gamer is proud off and some they are working threw, also if possible links to game pages for their achievements
     * Has a rating of there skills compaired to each other
@@ -65,7 +68,9 @@ These are the users I am thinking off:-
 	* Has links to site owners terms of use and privacy policy
 	* Has a link to the feedback form and the forum
 2. Gaming page
+    * Shows which games have recorded gameplay and what ones are intended for the future
     * Has a history of the gmaes played and finished
+	* Has a rating of there skills compaired to each other
 
 ###Features Left to Implement
 
@@ -78,9 +83,7 @@ These are the users I am thinking off:-
     * Has a photo of the gamer
     * Has personal stories
 4. Gaming page
-    * Shows which games have recorded gameplay and what ones are intended for the future
     * Has some of the achievement that the gamer is proud off and some they are working threw, also if possible links to game pages for their achievements
-    * Has a rating of there skills compaired to each other
 5. Contact page
     * Has a froum or a link to an external forum
     * Has a form that they can submit without a name but requires text

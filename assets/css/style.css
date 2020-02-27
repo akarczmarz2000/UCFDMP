@@ -31,7 +31,7 @@
     background-size: cover;
     height: 190px;
 	width: 190px;
-    margin: 10px;
+    margin-left: 10px;
 }
 
 header{
@@ -113,6 +113,10 @@ header{
 }
 
 /*Body*/
+
+.p-area{
+	margin: 10px;
+}
 
 .area-title{
 	text-decoration: underline;
