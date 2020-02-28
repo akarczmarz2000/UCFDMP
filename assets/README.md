@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.23 - UX Updated
+#User Centric Frontend Development Milestone Project - Gamer Website v0.3 - Gaming Complete
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,12 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.3 - Gaming Complete
+Added some comments to the page to help direct other developers.
+Added the achievement section with an example of how I would like it set up with the achievement logo (if the game has one), with a description and name of the achievement and how it can be obtained.
+In a usable version I'd like the image to go to the games page about the achievement for example steam page for a game achievements. This would be stated in the text above it like in the example, 
+i.e "The photo above will take you to the Steam achievement description for Sword Skills in Warframe."
 
 ###v0.23 - UX Update
 I have sorted some issues were occurring at different breakpoints.
@@ -76,6 +82,7 @@ These are the users I am thinking off:-
 2. Gaming page
     * Shows which games have recorded gameplay and what ones are intended for the future
     * Has a history of the games played and finished
+	* Has some of the achievement that the gamer is proud off and some they are working threw, also if possible links to game pages for their achievements
     * Has a rating of there skills compared to each other
 
 ###Features Left to Implement
@@ -89,7 +96,7 @@ These are the users I am thinking off:-
     * Has a photo of the gamer
     * Has personal stories
 4. Gaming page
-    * Has some of the achievement that the gamer is proud off and some they are working threw, also if possible links to game pages for their achievements
+    * Complete
 5. Contact page
     * Has a forum or a link to an external forum
     * Has a form that they can submit without a name but requires text
