@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.3 - Gaming Complete
+#User Centric Frontend Development Milestone Project - Gamer Website v0.31 - User Testing
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,12 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.31 - User Testing
+Three scinarios wehre handed out to three users
+The results concluded a need for an index/quick navigation
+They also suggest a need for theme change for those who are used to darker page type
+Finally information about how to navigate to the youtube links need to be more visible
 
 ###v0.3 - Gaming Complete
 Added some comments to the page to help direct other developers.
@@ -181,6 +187,29 @@ These are the users I am thinking off:-
         * It was distorting the size of the signup/login buttons
     * Change the bars from margin to padding so that it looks better on small device screen size
         * The margin they had meant that they slightly hung over the edge of the page
+		
+6. User Testing
+	*First scinario
+		* They were a player of simular calibure looking for my achievement so they could compared
+			* From the home page they went to the gaming page assuming it was there
+			* They scrolled aimlessly till they came across the achievements at the bottom
+				* Possibly has an index on the side so they can quick navigate or know where the information should be and could scroll
+			* They said the information is displayed well for most users but they are used to reading of off darker displays and the white background made it hard for them to read
+				* I could apply a light and dark theme to help reader use to darker themes or increase text size for better readability
+	* Second scinario
+		* They were a new to my content and was curious about my skills and weather my content would be worth them watching to help them through puzzle games
+			* They origanally navigated to the about page for this information then when it wasnt't there went to the gaming page
+				* Use the Home page to suggest/direct where information about certain things are will be applied
+			* They found the progress bars appealing but slightly hard to understand the top one till looking at the individual breakdowns
+				* Possibly make text explaining the top progress bar larger
+			* Found what they were looking for and decided the player believes that they are better at other content
+	* Third scinario
+		* Fan looking for the borderlands playlist and information about the game
+			* From the home page they navigated to the gaming page
+			* They scrolled down aimlessly till coming apon the section titled borderlands
+				* As stated this issue needs addressing
+			* They enjoyed the information but found it hard to work out how to get to the youtube video, eventually noticed the text that stated how to get there
+				* Seperating the text and making larger will help with direction, possibly placce under the image
     
 ##Reference
 1. Wikipedia
