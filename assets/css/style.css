@@ -221,6 +221,18 @@ header{
     margin-left: auto;
 }
 
+/*Feedback Form*/
+
+.feedback{
+	margin: 10px;
+}
+
+.form-note{
+	color: #b5b5b5;
+	text-align: center;
+	margin: 0;
+}
+
 /*Modal*/
 
 .btn--style{

@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.32 - Index Added
+#User Centric Frontend Development Milestone Project - Gamer Website v0.4 - Contact Page Started
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,10 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.4 - Contact Page Started
+A basic structure has been added
+A form with a simple design has been added will be running by some testers to see there attude to the appearance
 
 ###v0.32 - Index Added
 I have added an index to the left side of the page which shows links to headers and subsections 
@@ -95,6 +99,8 @@ These are the users I am thinking off:-
     * Has a history of the games played and finished
 	* Has some of the achievement that the gamer is proud off and some they are working threw, also if possible links to game pages for their achievements
     * Has a rating of there skills compared to each other
+3. Contact
+	* Has a form that they can submit without a name but requires text
 
 ###Features Left to Implement
 
@@ -110,7 +116,6 @@ These are the users I am thinking off:-
     * Complete
 5. Contact page
     * Has a forum or a link to an external forum
-    * Has a form that they can submit without a name but requires text
 
 ##Technologies Used
 

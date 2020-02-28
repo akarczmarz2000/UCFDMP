@@ -58,7 +58,41 @@
 			</div>
 		</div>	
 	</header>
-	<section>
+	<section class="row">
+	<div class="col-md-2 picture"></div>
+	<div class="col-md-8">
+	<div class="forum-link">
+	<h1 class="area-title">Fans Forum</h1>
+	<p>Some text about the forum and policy</p>
+	</div>
+	<div class="feedback-form">
+	<h3 class="area-title">Feedback Form</h3>
+	<form class="feedback">
+		<div class="form-row">
+			<div class="col">
+				<label for="F-Name">First Name</label>
+				<input type="text" class="form-control" id="F-Name" placeholder="First name">
+			</div>
+			<div class="col">
+				<label for="L-Name">Last Name</label>
+				<input type="text" class="form-control" id="L-Name" placeholder="Last name">
+			</div>
+			<p class="form-note">The name is optional, I want people to feel welcome to give feedback and observations. Please only enter your name if you want to.<p>
+		</div>
+		<div class="form-group">
+			<label for="Email">Email address</label>
+				<input type="email" class="form-control email" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		<div class="form-group">
+			<label for="Comment">Feedback</label>
+				<textarea class="form-control" id="Comment" rows="3" required>Please enter your issues in here, thank you.</textarea>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+	</div>
+	<div class="col-md-2 picture2"></div>
 	</section>
 	<footer class="container-fluid">
         <div id="footer-details" class="row">
