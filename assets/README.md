@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.31 - User Testing
+#User Centric Frontend Development Milestone Project - Gamer Website v0.32 - Index Added
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,11 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.32 - Index Added
+I have added an index to the left side of the page which shows links to headers and subsections 
+Until it doesn't look natural and then only shows section links 
+Then at tablet breakpoint it goes completely
 
 ###v0.31 - User Testing
 Three scinarios wehre handed out to three users
@@ -211,6 +216,24 @@ These are the users I am thinking off:-
 			* They enjoyed the information but found it hard to work out how to get to the youtube video, eventually noticed the text that stated how to get there
 				* Seperating the text and making larger will help with direction, possibly placce under the image
     
+7. Index Testing
+	* Test that the links go to the right point on the page
+		* They went to the correct section but cut out the headers when jumping
+			* Placed anchors above headers so that the header is also shown when jumping to a new area
+	* Testing appearance at different points
+		* The sub section links overlap box at about 1340px
+			*They will disappear there
+		* The section links overlap box
+			* Change text sizing of title and items to view point after 1500px
+			* The index is removed at 1024px
+	* Testing response and look
+		* Set underline to show when hovering over sub section links
+			* Works well and communicates responds effectively
+		* Set highlight for section links
+			* Looked mostly alright, but reduce the padding size
+			* Also changed highlight color was too dark for my opinion
+
+
 ##Reference
 1. Wikipedia
 	* https://en.wikipedia.org/wiki/Warframe
