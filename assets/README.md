@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.42 - Contact Complete
+#User Centric Frontend Development Milestone Project - Gamer Website v0.43 - About Complete
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,11 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.43 - About Complete
+I have added some personal text corrisponding with the three titles
+Added three images to accompany the text
+Added Rainbow titles for a flare and reference to my favourite colors
 
 ###v0.42 - Contact Complete
 Change social links font size at media breakpoint for tablet for a better list appearance

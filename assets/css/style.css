@@ -208,6 +208,16 @@ header{
 	float: right;
 }
 
+.games-center{
+	width: 500px;
+	margin: 5px;
+	border-radius: 5%;
+	border: 10px;
+	border-style: solid;
+	border-color: #202020;
+	float: center;
+}
+
 .achievement-logo{
 	width: 50px;
 	height: 50px;
@@ -242,6 +252,19 @@ header{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.hdr-right{
+	text-align: right;
+	background-image: linear-gradient(to right, violet, indigo, blue, green, orange, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hdr{
+	background-image: linear-gradient(to right, violet, indigo, blue, green, orange, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /*Feedback Form*/
