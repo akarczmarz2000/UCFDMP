@@ -269,6 +269,6 @@ These are the users I am thinking off:-
     * Used for content on the game page
 3. CSS Tricks
     * https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
-    *Used for media query breakpoints
+    * Used for media query breakpoints
 4. Adobe Color
 	* Used to choose hex colors for anything in the page
