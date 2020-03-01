@@ -119,16 +119,19 @@ header{
 .index-title{
 	text-decoration: underline;
 	color: #ef0ac1;
+	font-size: 1.2vw;
 }
 
 .index-item{
 	color: black;
+	font-size: 1vw;
 }
+
 /*Hoover*/
 
 .hvr-sweep-to-bottom:before{
     background: #404040;
-	height: 135px;
+	height: 104px;
 }
 
 /*Button*/
@@ -152,6 +155,10 @@ header{
 
 /*Body*/
 
+.header-background{
+	background-color: #000000ba;
+}
+
 .p-area{
 	margin: 10px;
 }
@@ -159,6 +166,7 @@ header{
 .area-title{
 	text-decoration: underline;
 	margin-top: 10px;
+	padding-top: 5px;
 	color: #ef0ac1;
 	background: url("../img/title-background.jpg");
 	background-position: center;
@@ -272,10 +280,29 @@ footer {
     font-size: 20px;
     line-height: 7px;
     text-align: center;
-    color: #fafafa;
     background: #8f8f8f;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.fa-facebook{
+	color: #2C76FF;
+}
+
+.fa-twitter{
+	color: #63ECFF;
+}
+
+.fa-instagram{
+	color: black;
+}
+
+.fa-youtube{
+	color: #FF3930;
+}
+
+.fa-twitch{
+	color: #BC48C2;
 }
 
 .icon li a i:hover{
@@ -378,13 +405,7 @@ footer {
 }
 
 @media (max-width: 1500px){
-	.index-title,
-	.index-item{
-		font-size: 0.9vw;
-}
-
-@media (max-width: 1345px){
-	.index-sm{
+	.index{
 		display: none;
 }
 

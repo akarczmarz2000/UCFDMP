@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.4 - Contact Page Started
+#User Centric Frontend Development Milestone Project - Gamer Website v0.41 - Peer Review and Response
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,12 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.41 - Peer Review and Response
+I have noted there suggestions and made changes based on these notes
+Change to the area titles
+Change to the navigation slide down feature
+Change to the social profile logos
 
 ###v0.4 - Contact Page Started
 A basic structure has been added
@@ -238,7 +244,18 @@ These are the users I am thinking off:-
 			* Looked mostly alright, but reduce the padding size
 			* Also changed highlight color was too dark for my opinion
 
-
+8. Peer Review
+	* After asking another developers to look at my website they made some suggestions
+		* They felt that the area titles could be hard to read for some people
+			* To try and fix this I have applied a shadow behind the text to help with visibilty
+		* They thought all area titles should be the same size for visual consistency
+			* I had the feedback header small to try and draw attention to the fan forum, but after consideration I have changed it to the same size as if they want to say something it should be clear where they want to go
+		* They found the overlap of the navigation area looked wrong
+			* I have changed it so the slide down only covers the boxes they are in. After they showed me how it looks and the fact it overlaps some content instead of just margin I agreed with there suggestions
+		*Finally they thought the color of the social logos should be the same as the user navigate the social media profile they wanted
+			* I agreed with this because hopefully it will draw users attention towards the social profiles
+			* I also hope that it will help people with visual impairment see them
+				* After attempting to color instagram with a lineur gradiant to give it the same rainbow effect as the normal logo I decided to go with the color of black as it stands out and is one of the main alternative colors of their logo
 ##Reference
 1. Wikipedia
 	* https://en.wikipedia.org/wiki/Warframe
@@ -253,3 +270,5 @@ These are the users I am thinking off:-
 3. CSS Tricks
     * https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
     *Used for media query breakpoints
+4. Adobe Color
+	* Used to choose hex colors for anything in the page
