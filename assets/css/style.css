@@ -229,6 +229,21 @@ header{
     margin-left: auto;
 }
 
+.fan-forum{
+	width: 90%;
+	border: 10px;
+	border-style: solid;
+	border-radius: 23px;
+	border-color: #202020;
+}
+
+.txt-center{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*Feedback Form*/
 
 .feedback{
@@ -320,6 +335,11 @@ footer {
 	}
 }
 
+@media (max-width: 1500px){
+	.index{
+		display: none;
+}
+
 @media (max-width: 1024px){
 	.btn-sm-pos{
 		display: none;
@@ -335,6 +355,34 @@ footer {
 	}
 	.index{
 		display: none;
+	}
+	.icon{
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 768px){
+	.small-move{
+		display: none;
+	}
+	.sm-sc-pos,
+	.btn-sm-pos{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logo{
+		display: none;
+	}
+	.icon li h6{
+		font-size: 12px;
+	}
+	
+	.icon li a i{
+		padding: 10px 0;
+		font-size: 15px;
+	    width: 25px;
+        height: 25px;
 	}
 }
 	
@@ -374,38 +422,24 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.icon h6{
-		font-size: 11px;
-	}
-	.icon li a i{
-		padding: 12px 0;
-		font-size: 15px;
-	    width: 30px;
-        height: 30px;
-	}
 	.progress-sm-sc-pos{
 		padding-left: 50px;
 		padding-right: 50px;
 	}
-}
-
-@media (max-width: 768px){
-	.small-move{
-		display: none;
+	.small-screen{
+		width: 220px;
 	}
-	.sm-sc-pos,
-	.btn-sm-pos{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	
+	.icon{
+		margin-right: 0;
 	}
-	.logo{
+	.sm-sc-policy{
 		display: none;
 	}
 }
 
-@media (max-width: 1500px){
-	.index{
-		display: none;
+@media (max-width: 360px){
+	.sm-sc-policy{
+		display: inline;
+	}
 }
-

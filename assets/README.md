@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.41 - Peer Review and Response
+#User Centric Frontend Development Milestone Project - Gamer Website v0.42 - Contact Complete
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -8,6 +8,15 @@ Another feature I'd like to supply is a forum for people to talk to each other a
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
 ##Version Overview
+
+###v0.42 - Contact Complete
+Change social links font size at media breakpoint for tablet for a better list appearance
+Change to the colum size of the achievement section for better fit on tablet and downwards in screen size
+Added a image of the fan forum
+Added some blurb about action taken towards any violations of privacy and for any bullying or simular conduct
+Added a link with the image and the blurb above the fan forum photo with a link to the fan forum
+I choose a link to an already established hosting site for the forum to save the file size for the page for better loading, 
+also the dedicated server for that is better. It will ensure no matter how big it gets it should run okay
 
 ###v0.41 - Peer Review and Response
 I have noted there suggestions and made changes based on these notes
@@ -100,6 +109,7 @@ These are the users I am thinking off:-
     * Has a link to the gamers social pages
     * Has links to site owners terms of use and privacy policy
     * Has a link to the feedback form and the forum
+	* Has quick links to areas on the page, this is down the left instead of on the navigation bar
 2. Gaming page
     * Shows which games have recorded gameplay and what ones are intended for the future
     * Has a history of the games played and finished
@@ -107,13 +117,14 @@ These are the users I am thinking off:-
     * Has a rating of there skills compared to each other
 3. Contact
 	* Has a form that they can submit without a name but requires text
+	* Has a link to an external forum designed in a simular theme
 
 ###Features Left to Implement
 
 1. A home page
     * Has different parts shortened down from other pages to give a small overview of the site
 2. Header and Footer
-    * Has quick links to areas on the page, only visible on navigation when on that page
+    * Complete
 3. About page
     * Has some family and personal history
     * Has a photo of the gamer
@@ -121,8 +132,7 @@ These are the users I am thinking off:-
 4. Gaming page
     * Complete
 5. Contact page
-    * Has a forum or a link to an external forum
-
+    * Complete
 ##Technologies Used
 
 * Font Awesome
