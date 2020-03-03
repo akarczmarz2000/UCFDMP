@@ -1,4 +1,4 @@
-#User Centric Frontend Development Milestone Project - Gamer Website v0.43 - About Complete
+# User Centric Frontend Development Milestone Project - Gamer Website v0.43 - About Complete
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -7,61 +7,7 @@ The next feature I'd like to supply is a history of the games they have played a
 Another feature I'd like to supply is a forum for people to talk to each other and the site owner about the content already created and the content they'd like to see. Also in this area, I'd like to supply a place where criticism can be placed anonymously or with a name to the owner directly.
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
-##Version Overview
-
-###v0.43 - About Complete
-I have added some personal text corrisponding with the three titles
-Added three images to accompany the text
-Added Rainbow titles for a flare and reference to my favourite colors
-
-###v0.42 - Contact Complete
-Change social links font size at media breakpoint for tablet for a better list appearance
-Change to the colum size of the achievement section for better fit on tablet and downwards in screen size
-Added a image of the fan forum
-Added some blurb about action taken towards any violations of privacy and for any bullying or simular conduct
-Added a link with the image and the blurb above the fan forum photo with a link to the fan forum
-I choose a link to an already established hosting site for the forum to save the file size for the page for better loading, 
-also the dedicated server for that is better. It will ensure no matter how big it gets it should run okay
-
-###v0.41 - Peer Review and Response
-I have noted there suggestions and made changes based on these notes
-Change to the area titles
-Change to the navigation slide down feature
-Change to the social profile logos
-
-###v0.4 - Contact Page Started
-A basic structure has been added
-A form with a simple design has been added will be running by some testers to see there attude to the appearance
-
-###v0.32 - Index Added
-I have added an index to the left side of the page which shows links to headers and subsections 
-Until it doesn't look natural and then only shows section links 
-Then at tablet breakpoint it goes completely
-
-###v0.31 - User Testing
-Three scinarios wehre handed out to three users
-The results concluded a need for an index/quick navigation
-They also suggest a need for theme change for those who are used to darker page type
-Finally information about how to navigate to the youtube links need to be more visible
-
-###v0.3 - Gaming Complete
-Added some comments to the page to help direct other developers.
-Added the achievement section with an example of how I would like it set up with the achievement logo (if the game has one), with a description and name of the achievement and how it can be obtained.
-In a usable version I'd like the image to go to the games page about the achievement for example steam page for a game achievements. This would be stated in the text above it like in the example, 
-i.e "The photo above will take you to the Steam achievement description for Sword Skills in Warframe."
-
-###v0.23 - UX Update
-I have sorted some issues were occurring at different breakpoints.
-I also made dome general UX changes to the layout of the gaming page, hopefully making it better to read and visually more appealing on different breakpoints
-
-###v0.22 - Gaming Updated
-In this version the level I which I view my skills has been represented in progress bars which are compared to each other.
-
-###v0.21 - Gaming Updated
-In this version, several game entries had been added, with images. 
-Updates to the phone view of the website.
-
-##UX
+## UX
 These are the users I am thinking off:-
 
 * A fan, 
@@ -80,7 +26,7 @@ These are the users I am thinking off:-
     * they'd like to know more but don't have much time on their hands to read a lot
     * they are looking for lots of snippet information from across the page
 
-##Features
+## Features
 
 1. A home page
     * Has different parts shortened down from other pages to give a small overview of the site
@@ -105,7 +51,7 @@ These are the users I am thinking off:-
     * Has a forum or a link to an external forum
     * Has a form that they can submit without a name but requires text
 
-###Existing Features
+### Existing Features
 
 1. Header and Footer
     * Has navigation to all the pages
@@ -124,7 +70,7 @@ These are the users I am thinking off:-
 	* Has a form that they can submit without a name but requires text
 	* Has a link to an external forum designed in a simular theme
 
-###Features Left to Implement
+### Features Left to Implement
 
 1. A home page
     * Has different parts shortened down from other pages to give a small overview of the site
@@ -149,7 +95,7 @@ These are the users I am thinking off:-
 * Bootstrap
     * The website uses bootstrap for easy feature addition
 
-##Testing
+## Testing
 
 1. Navigation Animation
     * Checking on tablet
@@ -271,7 +217,7 @@ These are the users I am thinking off:-
 			* I agreed with this because hopefully it will draw users attention towards the social profiles
 			* I also hope that it will help people with visual impairment see them
 				* After attempting to color instagram with a lineur gradiant to give it the same rainbow effect as the normal logo I decided to go with the color of black as it stands out and is one of the main alternative colors of their logo
-##Reference
+## Reference
 1. Wikipedia
 	* https://en.wikipedia.org/wiki/Warframe
 	* https://en.wikipedia.org/wiki/The_Elder_Scrolls_Online
