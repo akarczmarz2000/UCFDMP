@@ -7,6 +7,8 @@ The next feature I'd like to supply is a history of the games they have played a
 Another feature I'd like to supply is a forum for people to talk to each other and the site owner about the content already created and the content they'd like to see. Also in this area, I'd like to supply a place where criticism can be placed anonymously or with a name to the owner directly.
 Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.
 
+Version Information is in the change log in the assets folder
+
 ## UX
 These are the users I am thinking off:-
 
