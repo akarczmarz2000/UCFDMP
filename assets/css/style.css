@@ -281,6 +281,26 @@ header{
 	-webkit-text-fill-color: transparent;
 }
 
+.container{
+	position: relative;
+}
+
+.youtube-direction{
+	position: absolute;
+    top: 16px;
+    right: 35px;
+    background-color: #000000cc;
+    color: #b29ed5;
+}
+
+.youtube-direction-left{
+    position: absolute;
+    top: 16px;
+    left: 35px;
+    background-color: #000000cc;
+    color: #b29ed5;
+}
+
 /*Feedback Form*/
 
 .feedback{
@@ -383,6 +403,13 @@ footer {
 }
 
 @media (max-width: 1024px){
+	.youtube-direction-left,
+	.youtube-direction{
+		top: -17px;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
 	.btn-sm-pos{
 		display: none;
 	}
@@ -429,6 +456,9 @@ footer {
 }
 	
 @media (max-width: 640px){
+	.hdr-right{
+		text-align: center;
+	}
     .hvr-sweep-to-bottom:before{
     background: #404040;
     height: 90px;
