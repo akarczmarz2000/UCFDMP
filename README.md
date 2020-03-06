@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.51 Tester 1
+# User Centric Frontend Development Milestone Project - Gamer Website v0.51.2 Tester 2
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -260,6 +260,10 @@ These are the users I am thinking off:-
 				* In tablet and phone it sits as a strip above the image and text is centered
 			* Increase in text size to make more obvious
 				* Changed from a paragraphs tag to header 6
+	* Tester 2
+		* They were pleased with the overall look of the site and the general content
+		* They however did think that the login and sign up should be a link to a seperate page not a modal
+			* For now as I like the way it's displayed will leave it but if this comment is consistant with users I will change the setup
 	
 ## Reference
 1. Wikipedia
