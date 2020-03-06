@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.5 Index Complete
+# User Centric Frontend Development Milestone Project - Gamer Website v0.51 Tester 1
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -55,6 +55,8 @@ These are the users I am thinking off:-
     * Has a form that they can submit without a name but requires text
 6. Future Features
 	* Light page styling
+	* Add Photos to the Home page (index.html) possibly on slide to show off website
+	* Add slide to about page so images on there change as user is viewing
 
 ### Existing Features
 
@@ -245,7 +247,19 @@ These are the users I am thinking off:-
 	* Suggested splitting the content from the gaming page
 		* I have taken this on and have created a Feats page taking the achievements and the skill set section from the game page and placing it there for better access to content
 			* In the future I may create an individual page for skills if I add more game types or other content to this section
-	
+10. User Testing
+	* Tester 1
+		* A few spelling errors where found on the conact page
+			* These have been corrected
+		* Titles on the about page had a issues
+			* Titles that are aligned right on normal view need to be centered on small screens
+				* This has been done
+		* Access to video links on the Gaming page
+			* Move where the direction to the links are to under the image for clarity
+				* In computer view sits over the image
+				* In tablet and phone it sits as a strip above the image and text is centered
+			* Increase in text size to make more obvious
+				* Changed from a paragraphs tag to header 6
 	
 ## Reference
 1. Wikipedia
