@@ -1,5 +1,10 @@
 # Version Overview
 
+## vo.5 - Index Complete
+Index page has had the content complete
+I have responded to comments given by my mentor this can be found in the testing section of the page, test number 9
+Added a section in the Features called future features which are ones I'd like to implement in the future
+
 ## v0.43 - About Complete
 I have added some personal text corrisponding with the three titles
 Added three images to accompany the text

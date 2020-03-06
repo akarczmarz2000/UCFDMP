@@ -1,15 +1,15 @@
 /*Colors*/
 
-.btn--purple{
+.btn-purple{
     color: #fff500;
     background-color: #4600b8;
     border-color: #4600b8;
 }
 
-.btn--purple:hover,
-.btn--purple:active,
-.btn--purple:focus,
-.btn--purple:active:focus{
+.btn-purple:hover,
+.btn-purple:active,
+.btn-purple:focus,
+.btn-purple:active:focus{
     background-color: #7119FF;
     border-color: #7119FF;
     color: #B3AB00;
@@ -39,7 +39,12 @@
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #fafafa;
+    color: #7249bd;
+}
+
+.hdr-color{
+	color: #7249bd;
+	text-decoration: underline;
 }
 
 .logo{
@@ -99,31 +104,35 @@ header{
     width: 100%;
     padding-top: 5px;
     text-align: center;
-    font-size: 15px;
     font-weight: 300;
     letter-spacing: 2px;
 }
 
 .index{
-	background-color: #fafafa;
+	background-color: #404040;
 	display: block;
 	text-align: center;
 	margin-top: 5px;
 	margin-left: 10px;
 	margin-right: auto;
 	border: 10px;
-	border-color: ##202020;
+	border-color: #202020;
 	border-style: solid;
 	border-radius: 23px;
 }
+
 .index-title{
 	text-decoration: underline;
-	color: #ef0ac1;
+	color: #7249bd;
 	font-size: 1.2vw;
 }
 
+.index ul li{
+    list-style: none;
+}
+
 .index-item{
-	color: black;
+	color: #bba5e1;
 	font-size: 1vw;
 }
 
@@ -138,7 +147,7 @@ header{
 
 
 
-.btn--cta{
+.btn-cta{
     font-weight: bold;
     border-radius: 23px;
     width: 150px;
@@ -155,6 +164,11 @@ header{
 
 /*Body*/
 
+.content{
+    background-color: #404040;
+    color: #bba5e1;
+}
+
 .header-background{
 	background-color: #000000ba;
 }
@@ -167,7 +181,7 @@ header{
 	text-decoration: underline;
 	margin-top: 10px;
 	padding-top: 5px;
-	color: #ef0ac1;
+	color: #7249bd;
 	background: url("../img/title-background.jpg");
 	background-position: center;
 }
@@ -281,6 +295,10 @@ header{
 
 /*Modal*/
 
+.modal-style{
+	width: 340px;
+}
+
 .btn--style{
     font-weight: bold;
     border-radius: 23px;
@@ -297,7 +315,7 @@ header{
 /*Footer*/
 
 footer {
-    background-color: #525252;
+    background-color: #202020;
     color: #fafafa;
     margin: 0;
 }
@@ -352,6 +370,7 @@ footer {
 }
 
 /*Media Queries*/
+
 @media (min-width: 1024px){
 	.btn-sm-pos{
 		display: none;
@@ -459,10 +478,17 @@ footer {
 	.sm-sc-policy{
 		display: none;
 	}
+	.header-background{
+		text-align: center;
+	}
 }
 
 @media (max-width: 360px){
 	.sm-sc-policy{
 		display: inline;
+	}
+	.games-right,
+	.games-left{
+		width: 300px;
 	}
 }

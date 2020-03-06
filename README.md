@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.43 - About Complete
+# User Centric Frontend Development Milestone Project - Gamer Website v0.5 Index Complete
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -53,6 +53,8 @@ These are the users I am thinking off:-
 5. Contact page
     * Has a forum or a link to an external forum
     * Has a form that they can submit without a name but requires text
+6. Future Features
+	* Light page styling
 
 ### Existing Features
 
@@ -72,21 +74,28 @@ These are the users I am thinking off:-
 3. Contact
 	* Has a form that they can submit without a name but requires text
 	* Has a link to an external forum designed in a simular theme
+4. A home page
+    * Has different parts shortened down from other pages to give a small overview of the site
+5.  About page
+    * Has some family and personal history
+    * Has a photo of the gamer
+    * Has personal stories
 
 ### Features Left to Implement
 
 1. A home page
-    * Has different parts shortened down from other pages to give a small overview of the site
+    * Complete
 2. Header and Footer
     * Complete
 3. About page
-    * Has some family and personal history
-    * Has a photo of the gamer
-    * Has personal stories
+    * Complete
 4. Gaming page
     * Complete
 5. Contact page
     * Complete
+6. Future Features
+	* Light page styling
+	
 ##Technologies Used
 
 * Font Awesome
@@ -220,6 +229,24 @@ These are the users I am thinking off:-
 			* I agreed with this because hopefully it will draw users attention towards the social profiles
 			* I also hope that it will help people with visual impairment see them
 				* After attempting to color instagram with a lineur gradiant to give it the same rainbow effect as the normal logo I decided to go with the color of black as it stands out and is one of the main alternative colors of their logo
+9. Mentor Review 
+	* Suggested a more consistant color scheme
+		* I decided to take the colors from the logo and create a scheme that fits that well
+			* Titles are larger so they use the darker purple from the logo
+				* I also underlined the titles to make them more defined throughout the page
+			* Text is the lighter purple from the logo
+				* I have used a grey as the content background to help this color pop out for better contrast
+	* Suggested that attributes should all be in the css style sheet
+		* To do this I have created more css class to add these attribute through the css sheet, these classes have been added to new or the corresponding area in the css sheet
+			* I would also like to if I have time tidy up the css names and the amount of css class/ids I have that maybe redundunt
+				* I also would like to do this so that the css names are more consistant and explain more just by their names
+	* Suggested that the page index doesn't have bullet points on the area name
+		* This was something I wanted to fix anyhow but I had forgotten this has been rectified
+	* Suggested splitting the content from the gaming page
+		* I have taken this on and have created a Feats page taking the achievements and the skill set section from the game page and placing it there for better access to content
+			* In the future I may create an individual page for skills if I add more game types or other content to this section
+	
+	
 ## Reference
 1. Wikipedia
 	* https://en.wikipedia.org/wiki/Warframe

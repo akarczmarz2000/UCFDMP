@@ -18,8 +18,8 @@
 	<header>
 		<!--- Navigation Section --->
 		<div class="row no-gutters">
-			<button class="btn btn--purple btn--cta btn-sm-pos" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-			<button class="btn btn--purple btn--cta btn-sm-pos" data-toggle="modal" data-target="#loginmodal">Login</button>
+			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#signupmodal">Sign up</button>
+			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#loginmodal">Login</button>
 			<a href="../index.html" class="col-md-2 logo">
 			</a>
 
@@ -34,19 +34,22 @@
 				<div class="row no-gutters">
 					<div class="col">
 						<ul id="nav" class="list-inline navcontainer">
-							<li class="col-6 col-sm-3 ui-nav-color-home list-inline-item navitem">
+							<li class="col-6 col-sm-2 list-inline-item navitem">
 								<a href="../index.html"
 									class="hvr-sweep-to-bottom"><i class="fas fa-home"></i><span>Home</span></a>
 							</li>
-							<li class="col-6 col-sm-3 ui-nav-color-about list-inline-item navitem">
+							<li class="col-6 col-sm-2 list-inline-item navitem">
 								<a href="about.html"
 									class="hvr-sweep-to-bottom"><i class="fas fa-address-book"></i><span>About</span></a>
 							</li>
-							<li class="col-6 col-sm-3 ui-nav-color-gaming list-inline-item navitem">
+							<li class="col-6 col-sm-2 list-inline-item navitem">
 								<a href="gaming.html"
 									class="hvr-sweep-to-bottom"><i class="fas fa-gamepad"></i><span>Gaming</span></a>
 							</li>
-							<li class="col-6 col-sm-3 ui-nav-color-contact list-inline-item navitem">
+                            <li class="col-6 col-sm-2 list-inline-item navitem">
+                            <a href="feats.html" class="hvr-sweep-to-bottom"><i class="fas fa-trophy"></i><span>Feats</span></a>
+							</li>
+							<li class="col-6 col-sm-2 list-inline-item navitem">
 								<a href="contact.html"
 									class="hvr-sweep-to-bottom"><i class="fas fa-headset"></i><span>Contact</span></a>
 							</li>
@@ -56,21 +59,21 @@
 			</div>
 			<div class="row small-move">
 				<div class="col">
-					<button class="btn btn--purple btn--cta" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-					<button class="btn btn--purple btn--cta" data-toggle="modal" data-target="#loginmodal">Login</button>
+					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#signupmodal">Sign up</button>
+					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#loginmodal">Login</button>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="row">
+	<section class="row content">
 		<div class="col-md-2 picture"></div>
 		<div class="col-md-8">
 			<div class="forum-link">
-				<div class="area-title">
+				<div class="row no-gutters area-title">
 					<h1 class="header-background">Fans Forum</h1>
 				</div>
 				<div class="txt-center">
-					<h4>Hey Guys!</h4>
+					<h4 class="hdr-color">Hey Guys!</h4>
 							<p>So from here you can get to my fan forum, on there we can descuse what you like to see or
 								even plan time to play a few games together.
 								Although I just wanted to say before you go on here I have a zero-tolerance for breach
@@ -83,12 +86,12 @@
 								if you feel anything from the above statement is happening to you please don't be afraid
 								to private message me or another member of the team.</p>
 							<a href="https://a-jokerxd.freeforums.net/" target="_blank">
-								<h5>Fan forum - "Playing to the hardest!"</h5>
+								<h5 class="hdr-color">Fan forum - "Playing to the hardest!"</h5>
 								<img class="fan-forum" src="../assets/img/fan-forum.png" alt="Fan Forum Home Page"></a>
 				</div>
 			</div>
 			<div class="feedback-form">
-				<div class="area-title">
+				<div class="row no-gutters area-title">
 					<h1 class="header-background">Feedback Form</h1>
 				</div>
 				<form class="feedback">
@@ -188,7 +191,7 @@
 	</footer>
 	<div class="modal" tabindex="-1" role="dialog" id="signupmodal">
 		<div class="modal-dialog" role="document">
-			<div class="modal-content" style="width: 340px;">
+			<div class="modal-content modal-style">
 				<div class="modal-header">
 					<h5 class="modal-title">Sign Up!</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -218,7 +221,7 @@
 	</div>
 	<div class="modal" tabindex="-1" role="dialog" id="loginmodal">
 		<div class="modal-dialog" role="document">
-			<div class="modal-content" style="width: 340px;">
+			<div class="modal-content modal-style">
 				<div class="modal-header">
 					<h5 class="modal-title">Login!</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
