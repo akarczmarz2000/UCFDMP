@@ -1,5 +1,11 @@
 # Version Overview
 
+## v0.51 - Tester 1
+A few spelling errors where found on the conact page, these have been corrected
+Titles on the about page had a issues, on small screen their alignment has been changed
+Move where the direction to the links are to closer to the image for clarity, in computer view sits over the image
+In tablet and phone it sits as a strip above the image and text is centered
+
 ## vo.5 - Index Complete
 Index page has had the content complete
 I have responded to comments given by my mentor this can be found in the testing section of the page, test number 9
