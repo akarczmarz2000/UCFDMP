@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.51.4 Tester 4
+# User Centric Frontend Development Milestone Project - Gamer Website v0.52 Intial Page Deployment
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -282,6 +282,9 @@ These are the users I am thinking off:-
 		* They said "there is a consistant design throughout, very informative about each topic and a good range of interaction with potentially interested users."
 		* They found that the contacts link in the Home page (index.html) doesn't work
 			* This has been fixed
+11. Deployment of final page
+	* Runs correctly after user review
+	* All edits have been added and work as intended
 			
 ## Reference
 1. Wikipedia

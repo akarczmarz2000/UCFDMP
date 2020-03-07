@@ -1,8 +1,12 @@
 # Version Overview
 
+## v0.52 - Intial Page Deployment
+Runs correctly after user review\
+All edits have been added and work as intended
+
 ## v0.51.4 - Tester 4
-I have changed the colours to contrast with the bars so that the text stands out and I have added a shadow behind the text
-I have increased the bar size on all screens and text has also been increased in size
+I have changed the colours to contrast with the bars so that the text stands out and I have added a shadow behind the text\
+I have increased the bar size on all screens and text has also been increased in size\
 They found that the contacts link in the Home page (index.html) doesn't work and this is now fixed
 
 ## v0.51.3 - Tester 3
