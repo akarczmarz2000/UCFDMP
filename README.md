@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.51.3 Tester 3
+# User Centric Frontend Development Milestone Project - Gamer Website v0.51.4 Tester 4
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -273,7 +273,16 @@ These are the users I am thinking off:-
 			* These are filler images so I won't worry about it at the moment but in a full lunch I will ensure that the images display the game name clearly and that the image is centered properly
 				* I may also increase the box size if the images don't fit properly
 		* They were pleased with all other content
-	
+	* Tester 4
+		* They found the strips on the logo page to be confusing
+			* These are filler images so I won't worry about it at the moment but in a full lunch I will ensure that the images display the game name clearly and that the image is centered properly
+		* Found that the progress bars might be hard to read the labels on lower resolution or with bad eye sight
+			* I have changed the colours to contrast with the bars so that the text pops and have added a shadow
+			* I have increased the bar size on all screens and text has also been increased in size
+		* They said "there is a consistant design throughout, very informative about each topic and a good range of interaction with potentially interested users."
+		* They found that the contacts link in the Home page (index.html) doesn't work
+			* This has been fixed
+			
 ## Reference
 1. Wikipedia
 	* https://en.wikipedia.org/wiki/Warframe

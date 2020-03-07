@@ -1,5 +1,10 @@
 # Version Overview
 
+## v0.51.4 - Tester 4
+I have changed the colours to contrast with the bars so that the text stands out and I have added a shadow behind the text
+I have increased the bar size on all screens and text has also been increased in size
+They found that the contacts link in the Home page (index.html) doesn't work and this is now fixed
+
 ## v0.51.3 - Tester 3
 I have added a top margin to both to one space them out from each other and look more inline with other elements\
 I have changed the login and sign up so it will move to the center underneathe the navigation bar till the lower resolution where they will disappear and be replaced by the ones accross the top
