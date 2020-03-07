@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.51.2 Tester 2
+# User Centric Frontend Development Milestone Project - Gamer Website v0.51.3 Tester 3
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -264,6 +264,15 @@ These are the users I am thinking off:-
 		* They were pleased with the overall look of the site and the general content
 		* They however did think that the login and sign up should be a link to a seperate page not a modal
 			* For now as I like the way it's displayed will leave it but if this comment is consistant with users I will change the setup
+	* Tester 3
+		* They thought the sign up and login should be slightly lower down so they where more inline with other elements on the navigation
+			* I have added a top margin to both to one space them out from each other and look more inline with other elements
+		* They noticed a error with the signin and login at 50/50 screen width where the login moves below the rest of the navigation and looks out of place
+			* I have changed the login and sign up so it will move to the center underneathe the navigation bar till the lower resolution where they will disappear and be replaced by the ones accross the top
+		* They found the strips on the logo page to be confusing
+			* These are filler images so I won't worry about it at the moment but in a full lunch I will ensure that the images display the game name clearly and that the image is centered properly
+				* I may also increase the box size if the images don't fit properly
+		* They were pleased with all other content
 	
 ## Reference
 1. Wikipedia

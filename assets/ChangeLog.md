@@ -1,8 +1,12 @@
 # Version Overview
+
+## v0.51.3 - Tester 3
+I have added a top margin to both to one space them out from each other and look more inline with other elements\
+I have changed the login and sign up so it will move to the center underneathe the navigation bar till the lower resolution where they will disappear and be replaced by the ones accross the top
+
 ## v0.51.2 - Tester 2
 They think that the login and sign up should be a link to a seperate page not a modal\
 For now as I like the way it's displayed will leave it but if this comment is consistant with users I will change the setup
-	
 
 ## v0.51 - Tester 1
 A few spelling errors where found on the conact page, these have been corrected\
