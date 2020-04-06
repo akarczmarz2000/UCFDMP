@@ -327,6 +327,12 @@ header{
     color: #b29ed5;
 }
 
+/*Light/Dark Toggle*/
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
 /*Feedback Form*/
 
 .feedback{
