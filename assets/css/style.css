@@ -7,6 +7,10 @@
     color: #7249bd;
 }
 
+.align-right{
+    text-align: right;
+}
+
 .hdr-color{
 	color: #7249bd;
 	text-decoration: underline;
