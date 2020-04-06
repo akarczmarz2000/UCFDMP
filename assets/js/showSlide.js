@@ -1,3 +1,4 @@
+showSlides()
 function showSlides() {
   var slideIndex = 0;
   var i;
