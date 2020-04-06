@@ -111,12 +111,12 @@ header{
 
 .index-toggle-title{
     text-decoration: underline;
-	color: #7249bd;
+	color: white;
 }
 
 .index-title{
 	text-decoration: underline;
-	color: #7249bd;
+	color: white;
 	font-size: 1.2vw;
 }
 
@@ -125,7 +125,7 @@ header{
 }
 
 .index-item{
-	color: #bba5e1;
+	color: white;
 	font-size: 1vw;
 }
 
