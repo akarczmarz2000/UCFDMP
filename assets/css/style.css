@@ -294,19 +294,6 @@ body{
 	margin-right: auto;
 }
 
-.hdr-right{
-	text-align: right;
-	background-image: linear-gradient(to right, violet, indigo, blue, green, orange, red);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.hdr{
-	background-image: linear-gradient(to right, violet, indigo, blue, green, orange, red);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
 .container{
 	position: relative;
 }
