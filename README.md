@@ -1,4 +1,4 @@
-# User Centric Frontend Development Milestone Project - Gamer Website v0.52 Intial Page Deployment
+# User Centric Frontend Development Milestone Project - Gamer Website v0.60 - Toggle Button for Light/Dark Mode
 
 This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube).
 The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users.
@@ -285,6 +285,12 @@ These are the users I am thinking off:-
 11. Deployment of final page
 	* Runs correctly after user review
 	* All edits have been added and work as intended
+12. Testing light/dark button
+    * Testing button
+        * Intitally the button added the wanted class but it didn't change the appearance of the page
+            * To fix this issue I changed the target of the function it now it works correctly
+            * I changed the colour of the text on the white background to black and visa versa for better readability
+        * After testing on inital page (gaming.html), I implemented the refined version to other pages and tested it there
 			
 ## Reference
 1. Wikipedia

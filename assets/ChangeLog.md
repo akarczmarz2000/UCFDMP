@@ -1,5 +1,10 @@
 # Version Overview
 
+## v0.60 - Toggle Button for Light/Dark Mode
+Styling for the dark mode and the light mode have been added to the style.css.\
+A JavaScript file called lightDarkToggle.js was created that has the function that changes the style.\
+It has been tested on the game.html and will be implement on the other pages in the next commit.
+
 ## v0.52 - Intial Page Deployment
 Runs correctly after user review\
 All edits have been added and work as intended
