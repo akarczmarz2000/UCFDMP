@@ -109,6 +109,11 @@ header{
 	border-radius: 23px;
 }
 
+.index-toggle-title{
+    text-decoration: underline;
+	color: #7249bd;
+}
+
 .index-title{
 	text-decoration: underline;
 	color: #7249bd;
