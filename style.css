@@ -36,6 +36,11 @@
     margin-left:1rem;
 }
 
+/*Login/Sign Up*/
+.fan-login{
+    margin-right: auto;
+}
+
 /*Header*/
 .hdr{
     background-color: black;
