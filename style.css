@@ -35,6 +35,11 @@
     padding:10rem;
 }
 
+/*Header*/
+.top-hdr{
+    font-size: 1rem;
+}
+
 /*Hover Effect*/
 .sidenav a:hover {
   color: #f1f1f1;
