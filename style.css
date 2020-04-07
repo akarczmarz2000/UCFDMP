@@ -32,7 +32,8 @@
 .nav-btn{
     border: double;
     border-radius: 25%;
-    margin:0.5rem;
+    margin-top:1rem;
+    margin-left:1rem;
 }
 
 /*Header*/
