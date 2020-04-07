@@ -5,291 +5,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/5c3d3d9c4a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		integrity="sha256-c+C87jupO1otD1I5uyxV68WmSLCqtIoNlcHLXtzLCT0=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/lightDarkToggle.js"></script>
+    <title>A-JokerXD - Home</title>
+    <!---CDN for Bootstrap and Font Awesome--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sketchy/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!---Link to stylesheets--->
+	<link rel="stylesheet" href="style.css">
+    <!---JavaScript Sources Links--->
+    <script src="assets/js/sideNavMenu.js"></script>
+    <!---Side Navigation Menu--->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Gaming</a>
+		<a href="#">Feats</a>
+        <a href="#">Contact</a>
+	</div>
+    <span onclick="openNav()">open</span>
 </head>
 
 <body>
-	<header>
-		<!--- Navigation Section --->
-		<div class="row no-gutters">
-			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#loginmodal">Login</button>
-			<a href="index.html" class="col-md-2 logo">
-			</a>
+    <div id="main">
 
-			<!--- Name, Title and Navigation --->
-			<div class="col-md-8 sm-sc-pos">
-				<div class="row no-gutters">
-					<div class="col heading">
-						<h1>A-JokerXD</h1>
-					</div>
-				</div>
-				<!--- Navigation Section --->
-				<div class="row no-gutters">
-					<div class="col">
-						<ul id="nav" class="list-inline navcontainer">
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="index.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-home"></i><span>Home</span></a>
-							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="page/about.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-address-book"></i><span>About</span></a>
-							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="page/gaming.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-gamepad"></i><span>Gaming</span></a>
-							</li>
-                            <li class="col-6 col-sm-2 list-inline-item navitem">
-                            <a href="page/feats.html" class="hvr-sweep-to-bottom"><i class="fas fa-trophy"></i><span>feats</span></a>
-							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="page/contact.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-headset"></i><span>Contact</span></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row small-move">
-				<div class="col">
-					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#loginmodal">Login</button>
-				</div>
-			</div>
-		</div>
-	</header>
-	<section class="row content">
-		<div class="col-md-2 picture">
-            <div class="index navbar sticky-top">
-				<a class="navbar-brand" href="#top">
-					<h4 class="index-title">What is This Website!</h4>
-				</a>
-				<ul class="index-sm">
-					<li><a class="navbar-brand" href="#whatshere">
-							<h6 class="index-item">What's Here For You?</h6>
-						</a></li>
-					<li><a class="navbar-brand" href="#aboutme">
-							<h6 class="index-item">Some Stuff About Me</h6>
-						</a></li>
-					<li><a class="navbar-brand" href="#gaming">
-							<h6 class="index-item">My Gaming</h6>
-						</a></li>
-					<li><a class="navbar-brand" href="#chat">
-							<h6 class="index-item">Let's Chat</h6>
-						</a></li>
-				</ul>
-				<h4 class="index-toggle-title">Toggle Light/Dark Mode</h4>
-				<button onclick="myFunction()">Light/Dark</button>
-			</div>
-        </div>
-		<div class="col-md-8">
-			<div class="row no-gutters area-title">
-                <a name="top"></a>
-				<h1 class="header-background">What is This Website?</h1>
-			</div>
-			<div class="sm-center">
-			<p>So.. this page was created by myself to help my players communicate with me but also get to see
-			what I am up to and what I am thinking about doing. On here is lots of interesting information about myself
-			and the games I am playing that will be updated on a regular bases, such info as where I feel my skill sits
-			in each type of game; and things like what achievements I have managed to do and how you get them.</p>
-			<p>With this site I really hope I can give you the content you want to see. If you feel I can do
-			something different to make these videos better I'd love to hear your opinion, but I do ask one
-			thing from the users of this page. I have a <b>Zero Tolerance</b> for any form of bullying or
-			harrasement. I also take pride in keeping your private information private, so any and all violation
-			of this will be <b>prosicuted with strongest legal action.</b></p>
-			</div>
-			<div class="row no-gutters area-title">
-                <a name="whatshere"></a>
-				<h1 class="header-background">What's Here For You?</h1>
-			</div>
-			<div class="sm-center">
-            <a name="aboutme"></a>
-			<h3>Some Stuff About Me <i class="far fa-address-card"></i></h3>
-			<p>On the About page there is lots of interesting information that tells the story of how I got to 
-			where I am at now. To be more specific I have tried to ask commonly asked questions, whilst doing this
-			I have added a bit of my history in so those who don't know me (or those who do and want to know more) can
-			have a read through and I think understand why I create YouTube and Twitch content.</p>
-            <a name="gaming"></a>
-			<h3>My Gaming <i class="fas fa-headset"></i></h3>
-			<p>I have two pages that relate to this. The first page is the gaming page which has a small explanation
-			 of the game, with some interesting facts like the publisher, how old the game is and a small. 
-			 I have tried to make sure each one has a small synopsis of the begining story.</p>
-			<p> Then under that I have tried to explain why I play and what I enjoy most about the game. 
-			This could be features, story or something else that the game offers. In the future I want to also
-			put in this section who I have played this game with so if you guys like the content
-			you can go and follow them too and let us know you enjoyed it, so we can create more together.</p>
-			<p>Then the second page which is the Feats page which has all the achievements, legendary missions and 
-			collectables I have done/gotton. Also on this page is a breakdown of my skills as I see them.</p>
-			<p>The achievements, legendary missions and collectables I have tried to explain how I completed/gotton
-			them. It also has a link to any videos that I have done on these or whilst trying to achieve these.
-			I will say that some of these are quite hard without your buddies around to help, so if anyone wants
-			a hand jump on over to the <b><a href="page/contact.html">Contact Page</a></b> to get the link to the fan forum,
-			there you can ask you fellow fans or myself for our help and I will do my best to help you!</p>
-            <a name="chat"></a>
-			<h3 class="hdr-color">Let's Chat <i class="fas fa-comments"></i></h3>
-			<p>Finally we have the Contact page, here I want to help my fans and gamers in general have a 
-			space where they can meet up and ask for certain content, help or just chat for fun. 
-			In time I hope to create a Discord server with lots of cool things to offer like team making 
-			channels for games, links to ingame clans/guilds for games that have them and many more 
-			channels and voice chats to help us all connect and have fun, pushing each other to our 
-			best selfs.</p>
-			<p>Also on this page is a feedback form for anyone who feels that there is issues with my content, 
-			this can also be used to give ideas if you don't want to say it to me directly. It does ask for a
-			name which is option, but the email is essential so I can thank you and talk about your ideas 
-			to see how I can help you enjoy my content, <b>my goal is to help you enjoy what I can offer</b>
-			and I hope people won't have to use this but I can understand if you need to.</p>
-			</div>
-		</div>
-		<div class="col-md-2 picture2"></div>
-	</section>
-	<footer class="container-fluid">
-		<div id="footer-details" class="row">
-			<div class="col-sm-4">
-				<h5 class="small-header">Privacy Policy and Terms of Use</h5>
-				<p class="small-print small-text">Here I care about my fans and your well being so I make it my job to
-					make sure that your safety is my upmost concern.
-					That mean that my website has a zero tolerance for breach of data protection, anyone found doing so
-					within our team or from the public will be prosicuted.
-					And for those who use my site or content as a means to bully or harrase others will has strong and
-					quick action taken to stop them in there tracks.</p>
-						<h6 class="small-header">For more information see here -
-							<br><a class="small-text" href="">Privacy Policy</a>
-							<br><a class="small-text" href="">Terms of Use</a></h6>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="small-header">Help</h5>
-						<p class="small-text"> Having issues with some of the content posted, please let me know here -
-							<br><a class="small-text" href="#">Feedback Form!</a>
-							<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
-							<br><a class="ss" href="#">Fans Forum!</a>
-							</p>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="small-header">Social</h5>
-				<ul class="list-inline icon">
-					<li class="list-inline-item">
-						<h6>@AJokerXDArtnCrafts
-							<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
-								<i class="fab fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>@AJokerxd
-							<a target="_blank" href="https://twitter.com/AJokerxd">
-								<i class="fab fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>ajokerxd
-							<a target="_blank" href="https://www.instagram.com/ajokerxd/">
-								<i class="fab fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>A-JokerXD
-							<a target="_blank" href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>AJokerXDYouTube
-							<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
-								<i class="fab fa-twitch"></i>
-								<span class="sr-only">Twitch</span>
-							</a>
-						</h6>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-	<div class="modal" tabindex="-1" role="dialog" id="signupmodal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content modal-style">
-				<div class="modal-header">
-					<h5 class="modal-title">Sign Up!</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span>
-        </button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="SignupEmail">Email address</label>
-							<input type="email" class="form-control" id="SignupEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-						</div>
-						<div class="form-group">
-							<label for="newpassword">Password</label>
-							<input type="password" class="form-control" id="newpassword" placeholder="Password" required>
-                        </div>
-							<div class="form-group">
-								<label for="repeatPassword">Repeat Password</label>
-								<input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password" required>
-                        </div>
-								<button type="submit" class="btn btn-success">Submit!</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal" tabindex="-1" role="dialog" id="loginmodal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content modal-style">
-				<div class="modal-header">
-					<h5 class="modal-title">Login!</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="UserEmail">Email address</label>
-							<input type="email" class="form-control" id="UserEmail" aria-describedby="email" placeholder="Enter email" required>
-						</div>
-							<div class="form-group">
-								<label for="password">Password</label>
-								<input type="password" class="form-control" id="password" placeholder="Password" required>
-                        </div>
-								<button type="submit" class="btn btn-success">Login!</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
