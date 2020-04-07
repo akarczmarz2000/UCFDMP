@@ -36,11 +36,16 @@
 }
 
 /*Header*/
+.hdr{
+    background-color: black;
+}
+
 .top-hdr{
     font-size: 3rem;
     margin: 0.5rem;
     text-align: center;
     font-family: 'IM Fell French Canon SC', serif;
+    color: white;
 }
 
 /*Hover Effect*/
