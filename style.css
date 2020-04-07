@@ -32,6 +32,7 @@
 .nav-btn{
     border: double;
     border-radius: 25%;
+    padding:10rem;
 }
 
 /*Hover Effect*/
