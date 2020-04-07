@@ -37,8 +37,9 @@
 
 /*Header*/
 .top-hdr{
-    font-size: 1rem;
+    font-size: 3rem;
     margin: 0.5rem;
+    text-align: center;
 }
 
 /*Hover Effect*/
