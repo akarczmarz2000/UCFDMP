@@ -1,5 +1,5 @@
 /*Side Navigation Menu */
-.sidenav {
+.side-nav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -12,7 +12,7 @@
   transition: 0.5s;
 }
 
-.sidenav a {
+.side-nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -21,7 +21,7 @@
   transition: 0.3s;
 }
 
-.sidenav .closebtn {
+.side-nav .close-btn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -29,8 +29,13 @@
   margin-left: 50px;
 }
 
+.nav-btn{
+    border: double;
+    border-radius: 25%;
+}
+
 /*Hover Effect*/
-.sidenav a:hover {
+.side-nav a:hover {
   color: #f1f1f1;
 }
 
@@ -42,6 +47,6 @@
 
 /*Media Query*/
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .side-nav {padding-top: 15px;}
+  .side-nav a {font-size: 18px;}
 }
