@@ -37,9 +37,12 @@
 }
 
 /*Login/Sign Up*/
-.fan-login{
+.fan-login-container{
     float: right;
-    margin: 0.25rem;
+}
+
+.fan-login{
+    margin: 0.1rem;
 }
 
 /*Header*/
