@@ -43,6 +43,7 @@
 
 .fan-login{
     margin: 0.1rem;
+    margin-top: 1.2rem;
     width: 60px;
 }
 
@@ -81,5 +82,8 @@
     }
     .nav-btn{
         margin-top: 0.5rem;
+    }
+    .fan-login{
+        margin-top: 0.1rem;
     }
 }
