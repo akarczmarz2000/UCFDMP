@@ -100,7 +100,6 @@
 /*Light/Dark Mode Button*/
 .l-d-btn-container{
     position: absolute;
-    left: 1350px;
     bottom: 25px;
 }
 
@@ -308,9 +307,9 @@ body{
         margin-top: 25vw;
     }
     .top-hdr{
-        font-size: 8vw;
-        margin-top: 3.5vw;
-        float: left;
+        font-size: 9vw;
+        margin-top: 3vw;
+        text-align: left;
     }
     .nav-btn{
         margin-top: 4vw;
@@ -323,7 +322,7 @@ body{
         font-size: 12px;
     }
     .l-d-name-pos{
-        left: 60px;
+        left: 70px;
         bottom: 60px;
     }
     .l-d-container{
