@@ -16,4 +16,3 @@ function lightDarkMode() {
         }, 1000)
     }
 }
-lightDarkMode()
