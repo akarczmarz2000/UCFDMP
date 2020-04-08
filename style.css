@@ -222,6 +222,63 @@ body{
     font-family: 'Gotu', sans-serif;
 }
 
+/*Footer*/
+footer {
+    background-color: #202020;
+    color: #fafafa;
+    margin: 0;
+}
+
+.small-print{
+	font-size: 15px;
+}
+
+.icon{
+    padding-bottom: 15px;
+}
+
+.icon li a i{
+    width: 40px;
+    height: 40px;
+    padding: 16px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 7px;
+    text-align: center;
+    background: #8f8f8f;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.fa-facebook{
+	color: #2C76FF;
+}
+
+.fa-twitter{
+	color: #63ECFF;
+}
+
+.fa-instagram{
+	color: black;
+}
+
+.fa-youtube{
+	color: #FF3930;
+}
+
+.fa-twitch{
+	color: #BC48C2;
+}
+
+.icon li a i:hover{
+    background: #404040;
+}
+
+#footer-details{
+    padding: 20px;
+}
+
+
 /*Media Query*/
 
 @media screen and (max-width: 1366px){
