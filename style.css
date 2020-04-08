@@ -266,14 +266,14 @@ body{
         margin-top: 0.2vw;
     }
     .l-d-name-pos{
-        left: 4px;
-        top: 15px;
+        left: 60px;
+        bottom: 60px;
     }
     .l-d-container{
         margin: 5vw;
     }
     .l-d-btn-container{
         left: 160px;
-        bottom: 60px;
+        bottom: 0px;
     }
 }
