@@ -15,13 +15,18 @@
 	<!---JavaScript Sources Links--->
 	<script src="assets/js/sideNavMenu.js"></script>
 	<!---Side Navigation Menu--->
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div id="mySidenav" class="side-nav">
+		<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 		<a href="#">Home</a>
-		<li><a class="navbar-brand" href="#whatshere">What's Here For You?</a></li>
-		<li><a class="navbar-brand" href="#aboutme">Some Stuff About Me</a></li>
-		<li><a class="navbar-brand" href="#gaming">My Gaming</a></li>
-		<li><a class="navbar-brand" href="#chat">Let's Chat</a></li>
+		<div class="dropdown">
+			<button class="drop-btn">Dropdown</button>
+			<div class="dropdown-content">
+				<a class="" href="#whatshere">What's Here For You?</a>
+				<a class="" href="#aboutme">Some Stuff About Me</a>
+				<a class="" href="#gaming">My Gaming</a>
+                <a class="" href="#chat">Let's Chat</a>
+			</div>
+		</div>
 		<a href="#">About</a>
 		<a href="#">Gaming</a>
 		<a href="#">Feats</a>
