@@ -34,6 +34,7 @@
     border-radius: 25%;
     margin-top:1vw;
     margin-left:1vw;
+    font-family: 'Gotu', sans-serif;
 }
 
 /*Drop Down Page Index*/
@@ -85,22 +86,22 @@
     background-color: black;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
 .top-hdr{
     font-size: 3vw;
     margin: 0.5vw;
     text-align: center;
-    font-family: 'IM Fell French Canon SC', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
 }
 
 /*Light/Dark Mode Button*/
 .l-d-btn-container{
     position: absolute;
-    left: 800px;
-    bottom: 1px;
+    left: 1350px;
+    bottom: 25px;
 }
 
 input[type=checkbox]{
@@ -196,6 +197,7 @@ body{
     font-size: 12px;
     right: 10px;
     top: 3px;
+    font-family: 'Gotu', sans-serif;
 }
 
 .l-d-container{
@@ -207,18 +209,59 @@ body{
 }
 
 .body-hdr{
-    color: var(--color-hdr)
+    color: var(--color-hdr);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .body-text{
     color: var(--color-text);
+    font-family: 'Gotu', sans-serif;
 }
 
 .body-text a{
-    color: var(--color-text)
+    color: var(--color-text);
+    font-family: 'Gotu', sans-serif;
 }
 
 /*Media Query*/
+@media screen and (max-width: 1080px){
+    .l-d-btn-container{
+        left: 670px;
+        bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .l-d-btn-container{
+        left: 640px;
+    }
+    .body-text{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .l-d-btn-container{
+        left: 470px;
+        bottom: 34px;
+    }
+    .top-hdr{
+        margin: 3.5vw;
+        font-size: 5vw;
+    }
+    .top-space{
+        margin-top: 16vw;
+    }
+    .l-d-name{
+        top: 0;
+        font-size: 20px;
+    }
+    .nav-btn{
+        margin-top: 3.5vw;
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 640px){
     .top-space{
         margin-top: 15vw;
@@ -237,7 +280,11 @@ body{
     .nav-btn{
         margin: 3vw;
     }
+    .body-text{
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-height: 450px){
     .side-nav{
       padding-top: 15px;
@@ -250,6 +297,7 @@ body{
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 360px){
     .top-space{
         margin-top: 25vw;
