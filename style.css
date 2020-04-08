@@ -306,7 +306,39 @@ body{
     }
 }
 
-@media screen and (max-width: 414px) and (min-width: 320px){
+@media screen and (max-width: 360px){
+    .top-space{
+        margin-top: 25vw;
+    }
+    .top-hdr{
+        font-size: 8vw;
+        margin-top: 3.5vw;
+        float: left;
+    }
+    .nav-btn{
+        margin-top: 4vw;
+        font-size: 15px;
+    }
+    .fan-login{
+        margin-top: 0.2vw;
+    }
+    .l-d-name{
+        font-size: 12px;
+    }
+    .l-d-name-pos{
+        left: 60px;
+        bottom: 60px;
+    }
+    .l-d-container{
+        margin: 5vw;
+    }
+    .l-d-btn-container{
+        left: 160px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
     .top-space{
         margin-top: 25vw;
     }
