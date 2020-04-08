@@ -95,6 +95,10 @@
 }
 
 /*Light/Dark Mode Button*/
+.l-d-btn-container{
+    position: absolute
+}
+
 input[type=checkbox]{
 	height: 0;
 	width: 0;
