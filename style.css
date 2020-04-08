@@ -229,7 +229,7 @@ body{
         bottom: 15px;
     }
     .l-d-name-pos{
-        bottom: 0px;
+        bottom: 35px;
         left: 0px;
     }
 }
@@ -251,7 +251,7 @@ body{
         bottom: 2px;
     }
     .l-d-name-pos{
-        bottom: 0px;
+        bottom: 35px;
         left: 0px;
     }
 }
@@ -298,9 +298,16 @@ body{
     }
 }
 
+@media screen and (max-width: 640px){
+    .l-d-btn-container{
+        bottom: 25px;
+    }
+}
+
 @media screen and (max-width: 568px){
     .l-d-btn-container{
         left: 340px;
+        bottom: 16px;
     }
 }
 
@@ -328,11 +335,15 @@ body{
     .l-d-name{
         font-size: 15px;
     }
+    .l-d-btn-container{
+        left: 210px;
+        bottom: 1px;
+    }
 }
 
 @media screen and (max-width: 411px){
     .l-d-btn-container{
-        left: 200px;
+        left: 210px;
         bottom: 1px;
     }
     .body-hdr{
@@ -357,7 +368,7 @@ body{
         font-size: 15px;
     }
     .l-d-name-pos{
-        left: 70px;
+        left: 60px;
         bottom: 60px;
     }
     .l-d-container{
