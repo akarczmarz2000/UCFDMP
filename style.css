@@ -164,6 +164,10 @@ html.transition *:after {
 }
 
 /*Body*/
+.top-space{
+    margin-top: 10vw;
+}
+
 html{
     --bg: #fcfcfc;
     --bg-panel: #ebebeb;
@@ -221,7 +225,7 @@ body{
 }
 @media screen and (max-width: 360px){
     .top-hdr{
-        font-size: 9vw;
+        font-size: 8vw;
         margin-top: 3.5vw;
         float: left;
     }
@@ -232,6 +236,6 @@ body{
         margin-top: 0.2vw;
     }
     .l-d-btn-container{
-        left: 140px;
+        left: 120px;
     }
 }
