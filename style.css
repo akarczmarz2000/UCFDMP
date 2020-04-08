@@ -194,7 +194,7 @@ body{
 .l-d-name{
     color: white;
     position: absolute;
-    font-size: 12px;
+    font-size: 17px;
     right: 10px;
     top: 3px;
     font-family: 'Gotu', sans-serif;
@@ -254,7 +254,6 @@ body{
     }
     .l-d-name{
         top: 0;
-        font-size: 20px;
     }
     .nav-btn{
         margin-top: 3.5vw;
@@ -298,6 +297,15 @@ body{
     }
 }
 
+@media screen and (max-width: 411px){
+    .l-d-btn-container{
+        left: 200px;
+    }
+    .body-hdr{
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 414px) and (min-width: 320px){
     .top-space{
         margin-top: 25vw;
@@ -327,14 +335,5 @@ body{
     .l-d-btn-container{
         left: 160px;
         bottom: 0px;
-    }
-}
-
-@media screen and (max-width: 411px){
-    .l-d-btn-container{
-        left: 200px;
-    }
-    .body-hdr{
-        font-size: 25px;
     }
 }
