@@ -56,7 +56,7 @@
 
 .dropdown-content{
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #2d2d2d;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -205,7 +205,7 @@ body{
     margin: 2vw;
     padding: 2vw;
     border-radius: 25px;
-    box-shadow: 5px 10px #8888885e;
+    box-shadow: 5px 10px #888888bf;
 }
 
 .body-hdr{
@@ -309,9 +309,13 @@ body{
     }
     .nav-btn{
         margin-top: 4vw;
+        font-size: 15px;
     }
     .fan-login{
         margin-top: 0.2vw;
+    }
+    .l-d-name{
+        font-size: 12px;
     }
     .l-d-name-pos{
         left: 60px;
