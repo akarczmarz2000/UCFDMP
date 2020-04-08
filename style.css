@@ -47,7 +47,7 @@
 
 .dropdown{
   position: relative;
-  left: 100px;
+  left: 130px;
   bottom: 45px;
   width: 0;
   height: 0;
@@ -195,7 +195,7 @@ body{
     position: absolute;
     font-size: 12px;
     right: 10px;
-    top: 5px;
+    top: 3px;
 }
 
 .l-d-container{
@@ -219,6 +219,25 @@ body{
 }
 
 /*Media Query*/
+@media screen and (max-width: 640px){
+    .top-space{
+        margin-top: 15vw;
+    }
+    .l-d-btn-container{
+        left: 380px;
+        bottom: 17px;
+    }
+    .top-hdr{
+        text-align: left;
+        font-size: 8vw;
+    }
+    .l-d-container{
+        margin: 3vw;
+    }
+    .nav-btn{
+        margin: 3vw;
+    }
+}
 @media screen and (max-height: 450px){
     .side-nav{
       padding-top: 15px;
@@ -247,7 +266,8 @@ body{
         margin-top: 0.2vw;
     }
     .l-d-name-pos{
-        color: white;
+        left: 4px;
+        top: 15px;
     }
     .l-d-container{
         margin: 5vw;
