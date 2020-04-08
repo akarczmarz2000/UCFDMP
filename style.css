@@ -240,7 +240,7 @@ body{
     }
 }
 
-@media screen and (max-width: 834px) and (min-width: 768px){
+@media screen and (max-width: 834px){
     .l-d-btn-container{
         left: 470px;
         bottom: 34px;
@@ -261,7 +261,7 @@ body{
     }
 }
 
-@media screen and (max-width: 812px) and (min-width: 568px){
+@media screen and (max-width: 812px){
     .top-space{
         margin-top: 15vw;
     }
@@ -303,6 +303,31 @@ body{
     }
     .body-hdr{
         font-size: 25px;
+    }
+    .top-space{
+        margin-top: 25vw;
+    }
+    .top-hdr{
+        font-size: 8vw;
+        margin-top: 3.5vw;
+        float: left;
+    }
+    .nav-btn{
+        margin-top: 4vw;
+        font-size: 15px;
+    }
+    .fan-login{
+        margin-top: 0.2vw;
+    }
+    .l-d-name{
+        font-size: 12px;
+    }
+    .l-d-name-pos{
+        left: 60px;
+        bottom: 60px;
+    }
+    .l-d-container{
+        margin: 5vw;
     }
 }
 
