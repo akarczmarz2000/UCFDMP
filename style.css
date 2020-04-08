@@ -190,17 +190,17 @@ body{
     position: absolute;
 }
 
-.l-d-name-1{
+.l-d-name{
     color: white;
-}
-
-.l-d-name-2{
-    color: white;
+    position: absolute;
+    font-size: 12px;
+    right: 10px;
+    top: 5px;
 }
 
 .l-d-container{
     background-color: var(--bg-panel);
-    margin: 5vw;
+    margin: 2vw;
     padding: 2vw;
     border-radius: 25px;
     box-shadow: 5px 10px #8888885e;
