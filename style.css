@@ -229,6 +229,16 @@ footer{
     margin: 0;
 }
 
+.footer-text{
+    color: white;
+    font-family: 'Gotu', sans-serif
+}
+
+.footer-hdr{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .small-print{
 	font-size: 15px;
 }
