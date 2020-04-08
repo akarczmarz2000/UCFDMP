@@ -246,6 +246,9 @@ body{
     .fan-login{
         margin-top: 0.2vw;
     }
+    .l-d-name-pos{
+        color: white;
+    }
     .l-d-container{
         margin: 5vw;
     }
