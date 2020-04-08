@@ -186,8 +186,12 @@ body{
     background-color: var(--bg);
 }
 
+.l-d-name-pos{
+    position: absolute;
+}
+
 .l-d-name{
-    text-align: center;
+    color: white;
 }
 
 .l-d-container{
