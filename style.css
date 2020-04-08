@@ -99,7 +99,6 @@
     position: absolute;
     left: 800px;
     bottom: 1px;
-    box-shadow: 5px 10px #8888885e;
 }
 
 input[type=checkbox]{
@@ -186,6 +185,7 @@ body{
     margin: 2vw;
     padding: 2vw;
     border-radius: 25px;
+    box-shadow: 5px 10px #8888885e;
 }
 
 .body-hdr{
@@ -217,7 +217,7 @@ body{
     .top-hdr{
         font-size: 9vw;
         margin-top: 3.5vw;
-        text-align: none;
+        float: left;
     }
     .nav-btn{
         margin-top: 4vw;
