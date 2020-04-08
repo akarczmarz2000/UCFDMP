@@ -224,6 +224,16 @@ body{
 
 /*Media Query*/
 
+@media screen and (max-width: 1366px){
+    .l-d-btn-container{
+        bottom: 15px;
+    }
+    .l-d-name-pos{
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
 @media screen and (max-width: 1112px) and (min-width: 1024px){
     .l-d-btn-container{
         left: 640px;
@@ -231,11 +241,18 @@ body{
     .body-text{
         font-size: 25px;
     }
+    .nav-btn{
+        margin-top: 0.6vw;
+    }
 }
 
 @media screen and (max-width: 1080px){
     .l-d-btn-container{
         bottom: 2px;
+    }
+    .l-d-name-pos{
+        bottom: 0px;
+        left: 0px;
     }
 }
 
@@ -269,7 +286,6 @@ body{
     }
     .top-hdr{
         text-align: left;
-        font-size: 8vw;
     }
     .l-d-container{
         margin: 3vw;
@@ -297,6 +313,19 @@ body{
     }
     .dropdown{
         bottom: 35px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .l-d-name-pos{
+        bottom: 60px;
+        left: 65px;
+    }
+    .top-hdr{
+        font-size: 9vw;
+    }
+    .l-d-name{
         font-size: 15px;
     }
 }
@@ -335,6 +364,16 @@ body{
         margin: 5vw;
     }
 }
+
+@media screen and (max-width: 375px){
+    .l-d-btn-container{
+        left: 180px;
+        bottom: 1px;
+    }
+    .l-d-name{
+        font-size: 12px;
+    }
+}    
 
 @media screen and (max-width: 360px){
     .top-space{
@@ -385,7 +424,7 @@ body{
         margin-top: 0.2vw;
     }
     .l-d-name{
-        font-size: 12px;
+        font-size: 10px;
     }
     .l-d-name-pos{
         left: 60px;
@@ -395,7 +434,7 @@ body{
         margin: 5vw;
     }
     .l-d-btn-container{
-        left: 160px;
+        left: 135px;
         bottom: 0px;
     }
 }
