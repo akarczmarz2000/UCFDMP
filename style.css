@@ -75,7 +75,7 @@
 }
 
 .fan-login{
-    margin: 0.1vw;
+    margin: 0.3vw;
     margin-top: 1.2vw;
     width: 60px;
 }
@@ -96,7 +96,9 @@
 
 /*Light/Dark Mode Button*/
 .l-d-btn-container{
-    position: absolute
+    position: absolute;
+    left: 800px;
+    bottom: 1px;
 }
 
 input[type=checkbox]{
@@ -193,11 +195,6 @@ body{
     color: var(--color-hdr)
 }
 
-#main{
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
 /*Media Query*/
 @media screen and (max-height: 450px){
     .side-nav{
@@ -213,12 +210,16 @@ body{
 }
 @media screen and (max-width: 360px){
     .top-hdr{
-        font-size: 1.8vw;
+        font-size: 7vw;
+        margin-top: 3.5vw;
     }
     .nav-btn{
-        margin-top: 0.5vw;
+        margin-top: 4vw;
     }
     .fan-login{
-        margin-top: 0.1vw;
+        margin-top: 0.2vw;
+    }
+    .l-d-btn-container{
+        left: 190px;
     }
 }
