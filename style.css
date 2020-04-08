@@ -1,5 +1,5 @@
 /*Side Navigation Menu */
-.side-nav {
+.side-nav{
   height: 100%;
   width: 0;
   position: fixed;
@@ -12,7 +12,7 @@
   transition: 0.5s;
 }
 
-.side-nav a {
+.side-nav a{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -21,7 +21,7 @@
   transition: 0.3s;
 }
 
-.side-nav .close-btn {
+.side-nav .close-btn{
   position: absolute;
   top: 0;
   right: 25px;
@@ -32,12 +32,12 @@
 .nav-btn{
     border: double;
     border-radius: 25%;
-    margin-top:1rem;
-    margin-left:1rem;
+    margin-top:1vw;
+    margin-left:1vw;
 }
 
 /*Drop Down Page Index*/
-.drop-btn {
+.drop-btn{
   font-size: 25px;
   color: #f1f1f1;
   display: block;
@@ -45,7 +45,7 @@
   background-color: #111;
 }
 
-.dropdown {
+.dropdown{
   position: relative;
   left: 100px;
   bottom: 45px;
@@ -53,16 +53,16 @@
   height: 0;
 }
 
-.dropdown-content {
+.dropdown-content{
   display: none;
   position: absolute;
-  background-color: #1313;
+  background-color: #2d2d2d;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a{
   color: f1f1f1;
   padding: 12px 16px;
   text-decoration: none;
@@ -75,8 +75,8 @@
 }
 
 .fan-login{
-    margin: 0.1rem;
-    margin-top: 1.2rem;
+    margin: 0.1vw;
+    margin-top: 1.2vw;
     width: 60px;
 }
 
@@ -86,45 +86,135 @@
 }
 
 .top-hdr{
-    font-size: 3rem;
-    margin: 0.5rem;
+    position: sticky;
+    font-size: 3vw;
+    margin: 0.5vw;
     text-align: center;
     font-family: 'IM Fell French Canon SC', serif;
     color: white;
 }
 
+/*Light/Dark Mode Button*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-headings);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+/*Light/Dark Mode Transition*/
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 /*Hover Effect*/
-.side-nav a:hover {
+.side-nav a:hover{
   color: #f1f1f1;/*This will change the color of the links when they are hovered over*/
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover{
     background-color: rgb(37, 37, 37);/*This will change the color of the links when they are hovered over*/
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: block;/*This allows the dropdown menu to show on hover*/
 }
 
 /*Body*/
-#main {
+html{
+    --bg: #fcfcfc;
+    --bg-panel: #ebebeb;
+    --color-hdr: black;
+    --color-text: black;
+}
+
+html[data-theme="dark"]{
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-hdr: white;
+    --color-text: white;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.l-d-container{
+    background-color: var(--bg-panel);
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 25px;
+}
+
+.body-hdr{
+    color: var(--color-hdr)
+}
+
+#main{
   transition: margin-left .5s;
   padding: 20px;
 }
 
 /*Media Query*/
-@media screen and (max-height: 450px) {
-  .side-nav {padding-top: 15px;}
-  .side-nav a {font-size: 18px;}
+@media screen and (max-height: 450px){
+    .side-nav{
+      padding-top: 15px;
+    }
+    .side-nav a{
+      font-size: 18px;
+    }
+    .dropdown{
+        bottom: 35px;
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 360px){
     .top-hdr{
-        font-size: 1.8rem;
+        font-size: 1.8vw;
     }
     .nav-btn{
-        margin-top: 0.5rem;
+        margin-top: 0.5vw;
     }
     .fan-login{
-        margin-top: 0.1rem;
+        margin-top: 0.1vw;
     }
 }

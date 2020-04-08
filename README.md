@@ -308,3 +308,9 @@ These are the users I am thinking off:-
     * Used for media query breakpoints
 4. Adobe Color
 	* Used to choose hex colors for anything in the page
+5. Tutorial for light/dark mode
+    * It was by Marcin Wichary
+        * It can be found at https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a
+    * I followed a video by DesignCourse on YouTube to help
+        * It can be found at https://www.youtube.com/watch?v=ZKXv_ZHQ654
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,11 +13,13 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
 	<!---JavaScript Sources Links--->
+    <script src="assets/js/lightDarkMode.js"></script>
 	<script src="assets/js/sideNavMenu.js"></script>
 	<!---Side Navigation Menu--->
 	<div id="mySidenav" class="side-nav">
 		<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 		<a class="active-page" href="page/about.html">Home</a>
+        <!---Page Index Dropdown Menu--->
 		<div class="dropdown">
 			<button class="drop-btn"><i class="fas fa-chevron-circle-down"></i></button>
 			<div class="dropdown-content">
@@ -27,6 +29,7 @@
 				<a class="" href="#chat">Let's Chat</a>
 			</div>
 		</div>
+        <!---Pagge Index Dropdown Menu End--->
 		<a href="#">About</a>
 		<a href="#">Gaming</a>
 		<a href="#">Feats</a>
@@ -36,8 +39,17 @@
 		<div class="col-2">
 			<button class="nav-btn" onclick="openNav()">Open</button>
 		</div>
+        <!---Side Navigation Menu End--->
+        <!---Page Title--->
 		<div class="col-6">
 			<h1 class="top-hdr">A-JokerXD</h1>
+            <!---Light/Dark Mode Button--->
+            <div>
+                <input type="checkbox" id="switch" name="theme">
+                <label for="switch">Toggle</label>
+                lightDarkMode()
+            </div>
+            <!---Light/Dark Mode Button End--->
 		</div>
 		<div class="col-4">
 			<div class="fan-login-container">
@@ -50,7 +62,9 @@
 
 <body>
 	<div id="main">
-
+        <div class="l-d-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem, veniam magnam incidunt harum numquam nihil perspiciatis nam exercitationem minima aliquam reiciendis ab doloremque vero qui, voluptas quo cum debitis?</p>
+        </div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
