@@ -32,7 +32,7 @@
 .nav-btn{
     border: double;
     border-radius: 25%;
-    margin-top:1vw;
+    margin-top:1.4vw;
     margin-left:1vw;
     font-family: 'Gotu', sans-serif;
 }
@@ -262,11 +262,10 @@ body{
 
 @media screen and (max-width: 812px){
     .top-space{
-        margin-top: 15vw;
+        margin-top: 20vw;
     }
     .l-d-btn-container{
         left: 380px;
-        bottom: 17px;
     }
     .top-hdr{
         text-align: left;
@@ -280,6 +279,12 @@ body{
     }
     .body-text{
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .l-d-btn-container{
+        left: 340px;
     }
 }
 
@@ -299,6 +304,7 @@ body{
 @media screen and (max-width: 411px){
     .l-d-btn-container{
         left: 200px;
+        bottom: 1px;
     }
     .body-hdr{
         font-size: 25px;
