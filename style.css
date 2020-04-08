@@ -130,10 +130,6 @@ label:after {
 	transition: 0.3s;
 }
 
-input:checked + label {
-	background: var(--color-headings);
-}
-
 input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
@@ -212,6 +208,7 @@ body{
     .top-hdr{
         font-size: 7vw;
         margin-top: 3.5vw;
+        text-align: none;
     }
     .nav-btn{
         margin-top: 4vw;
