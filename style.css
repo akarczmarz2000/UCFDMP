@@ -182,9 +182,13 @@ body{
     background-color: var(--bg);
 }
 
+.l-d-name{
+    text-align: center;
+}
+
 .l-d-container{
     background-color: var(--bg-panel);
-    margin: 2vw;
+    margin: 5vw;
     padding: 2vw;
     border-radius: 25px;
     box-shadow: 5px 10px #8888885e;
@@ -228,6 +232,6 @@ body{
         margin-top: 0.2vw;
     }
     .l-d-btn-container{
-        left: 190px;
+        left: 140px;
     }
 }
