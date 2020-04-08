@@ -191,6 +191,10 @@ body{
     color: var(--color-hdr)
 }
 
+.body-text{
+    color: var(--color-text);
+}
+
 /*Media Query*/
 @media screen and (max-height: 450px){
     .side-nav{
@@ -206,7 +210,7 @@ body{
 }
 @media screen and (max-width: 360px){
     .top-hdr{
-        font-size: 7vw;
+        font-size: 9vw;
         margin-top: 3.5vw;
         text-align: none;
     }
