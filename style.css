@@ -236,7 +236,6 @@ body{
 
 @media screen and (max-width: 1080px){
     .l-d-btn-container{
-        left: 670px;
         bottom: 2px;
     }
 }
@@ -328,5 +327,14 @@ body{
     .l-d-btn-container{
         left: 160px;
         bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .l-d-btn-container{
+        left: 200px;
+    }
+    .body-hdr{
+        font-size: 25px;
     }
 }
