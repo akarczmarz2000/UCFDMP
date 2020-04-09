@@ -1,17 +1,17 @@
 function footerResizeSmall(screenQuerySmall){
-    var footerResize = document.getElementsByClassName(footer-resize-small)
+    var footerResizeSmall = document.getElementsByClassName(footer-resize-small)
     if (screenQuerySmall.matches){
-        footerResize.style.display = "none";
+        footerResizeSmall.style.display = "none";
     }else{
-        footerResize.style.display = "inline";
+        footerResizeSmall.style.display = "inline";
     }
 }
 
 function footerResizeNormal(screenQueryNormal){
-    var footerResize = document.getElementsByClassName(footer-resize-small)
-    if (screenQuerySmall.matches){
-        footerResize.style.display = "none";
+    var footerResizeNormal = document.getElementsByClassName(footer-resize-normal)
+    if (screenQueryNormal.matches){
+        footerResizeNormal.style.display = "none";
     }else{
-        footerResize.style.display = "inline";
+        footerResizeNormal.style.display = "inline";
     }
 }

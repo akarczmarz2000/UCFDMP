@@ -158,10 +158,10 @@
     <script>
     var screenQueryNormal = window.matchMedia("(max-width: 812px)")
     footerResizeNormal(screenQueryNormal)
-    screenQueryNormal.addListener(footerResize)
+    screenQueryNormal.addListener(footerResizeNormal)
     var screenQuerySmall = window.matchMedia("(max-width: 812px)")
     footerResizeSmall(screenQuerySmall)
-    screenQuerySmall.addListener(footerResize)
+    screenQuerySmall.addListener(footerResizeSmall)
     </script>
 	<footer>
 		<div class="footer-resize-small">
