@@ -1,17 +1,17 @@
 function footerResizeSmall(screenQuerySmall){
     var footerResize = document.getElementsByClassName(footer-resize-small)
     if (screenQuerySmall.matches){
-        document.footerResize.style.display = "inline";
+        footerResize.style.display = "inline";
     }else{
-        document.footerResize.style.display = "none";
+        footerResize.style.display = "none";
     }
 }
 
-function footerResizeNormal(screenQuerySmall){
+function footerResizeNormal(screenQueryNormal){
     var footerResize = document.getElementsByClassName(footer-resize-small)
     if (screenQuerySmall.matches){
-        document.footerResize.style.display = "none";
+        footerResize.style.display = "inline";
     }else{
-        document.footerResize.style.display = "inline";
+        footerResize.style.display = "none";
     }
 }

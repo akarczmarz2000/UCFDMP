@@ -65,7 +65,7 @@
 	</div>
 </head>
 
-<body onresize="footerResize()">
+<body>
 	<div class="top-space"></div>
 	<div class="l-d-container">
 		<a name="top"></a>
@@ -155,10 +155,10 @@
 		</div>
 	</div>
     <script>
-    var screenQueryNormal = window.matchMedia("(max-width: 700px)")
+    var screenQueryNormal = window.matchMedia("(min-width: 812px) and (max-width: 1920px)")
     footerResizeNormal(screenQueryNormal)
     screenQueryNormal.addListener(footerResize)
-    var screenQuerySmall = window.matchMedia("(max-width: 700px)")
+    var screenQuerySmall = window.matchMedia("(min-width: 320px) and (max-width: 800px)")
     footerResizeSmall(screenQuerySmall)
     screenQuerySmall.addListener(footerResize)
     </script>
