@@ -293,6 +293,9 @@ footer{
     padding: 20px;
 }
 
+.footer-small-screen{
+    display: none;
+}
 
 /*Media Query*/
 
@@ -346,9 +349,6 @@ footer{
     .nav-btn{
         margin-top: 3.5vw;
         font-size: 20px;
-    }
-    .footer-small-screen{
-        display: none;
     }
 }
 
