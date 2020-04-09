@@ -234,6 +234,11 @@ footer{
     font-family: 'Gotu', sans-serif
 }
 
+.footer-text a{
+    color: white;
+    font-family: 'Gotu', sans-serif
+}
+
 .footer-hdr{
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
@@ -342,6 +347,9 @@ footer{
         margin-top: 3.5vw;
         font-size: 20px;
     }
+    .footer-small-screen{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 812px){
@@ -362,6 +370,9 @@ footer{
     }
     .body-text{
         font-size: 20px;
+    }
+    .footer-hide-sm-scn{
+        display: none;
     }
 }
 
@@ -514,5 +525,8 @@ footer{
     .l-d-btn-container{
         left: 135px;
         bottom: 0px;
+    }
+    .footer-small-screen{
+        display: inline;
     }
 }

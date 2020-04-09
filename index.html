@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>A-JokerXD - Home</title>
-	<!---CDN for Bootstrap and Font Awesome--->
+	<!---CDN for Bootstrap, Font Awesome and Jquery--->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sketchy/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<!---Link to stylesheets--->
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto+Condensed:ital@1&display=swap"
@@ -63,7 +65,7 @@
 	</div>
 </head>
 
-<body>
+<body onresize="footerResize()">
 	<div class="top-space"></div>
 	<div class="l-d-container">
 		<a name="top"></a>
@@ -152,68 +154,93 @@
 			</p>
 		</div>
 	</div>
-	<footer class="container-fluid">
+	<footer>
 		<div class="row">
-			<div class="col-sm-4">
-				<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
-				<p class="footer-text">Here I care about my fans and your well being so I make it my job to
-					make sure that your safety is my upmost concern.
-					That mean that my website has a zero tolerance for breach of data protection, anyone found doing so
-					within our team or from the public will be prosicuted.
-					And for those who use my site or content as a means to bully or harrase others will has strong and
-					quick action taken to stop them in there tracks.</p>
-				<h6 class="footer-hdr">For more information see here -
-					<br><a class="footer-text" href="">Privacy Policy</a>
-					<br><a class="footer-text" href="">Terms of Use</a></h6>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="footer-hdr">Help</h5>
-				<p class="footer-text"> Having issues with some of the content posted, please let me know here -
-					<br><a href="#">Feedback Form!</a>
-					<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
-					<br><a href="#">Fans Forum!</a>
-				</p>
-			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 footerResize">
 				<h5 class="footer-hdr">Social</h5>
 				<ul class="list-inline icon">
 					<li class="list-inline-item">
-						<h6 class="footer-text">@AJokerXDArtnCrafts
+						<h6 class="footer-text footer-hide-sm-scn">@AJokerXDArtnCrafts
 							<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
 								<i class="fab fa-facebook" aria-hidden="true"></i>
 							</a>
 						</h6>
+						<div class="footer-small-screen">
+							<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
+								<i class="fab fa-facebook" aria-hidden="true"></i>
+							</a>
+						</div>
 					</li>
-					<li class="list-inline-item">
+					<li class="list-inline-item footer-hide-sm-scn">
 						<h6 class="footer-text">@AJokerxd
 							<a target="_blank" href="https://twitter.com/AJokerxd">
 								<i class="fab fa-twitter" aria-hidden="true"></i>
 							</a>
 						</h6>
+						<div class="footer-small-screen">
+							<a target="_blank" href="https://twitter.com/AJokerxd">
+								<i class="fab fa-twitter" aria-hidden="true"></i>
+							</a>
+						</div>
 					</li>
 					<li class="list-inline-item">
-						<h6 class="footer-text">ajokerxd
+						<h6 class="footer-text footer-hide-sm-scn">ajokerxd
 							<a target="_blank" href="https://www.instagram.com/ajokerxd/">
 								<i class="fab fa-instagram" aria-hidden="true"></i>
 							</a>
 						</h6>
+						<div class="footer-small-screen">
+							<a target="_blank" href="https://www.instagram.com/ajokerxd/">
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+							</a>
+						</div>
 					</li>
 					<li class="list-inline-item">
-						<h6 class="footer-text">A-JokerXD
+						<h6 class="footer-text footer-hide-sm-scn">A-JokerXD
 							<a target="_blank" href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
 								<i class="fab fa-youtube" aria-hidden="true"></i>
 							</a>
 						</h6>
+						<div class="footer-small-screen">
+							<a target="_blank" href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
+								<i class="fab fa-youtube" aria-hidden="true"></i>
+							</a>
+						</div>
 					</li>
 					<li class="list-inline-item">
-						<h6 class="footer-text">AJokerXDYouTube
+						<h6 class="footer-text footer-hide-sm-scn">AJokerXDYouTube
 							<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
 								<i class="fab fa-twitch"></i>
 							</a>
 						</h6>
+						<div class="footer-small-screen">
+							<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
+								<i class="fab fa-twitch"></i>
+							</a>
+						</div>
 					</li>
 				</ul>
 			</div>
+		</div>
+		<div class="col-sm-4 footerResize">
+			<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
+			<p class="footer-text">Here I care about my fans and your well being so I make it my job to
+				make sure that your safety is my upmost concern.
+				That mean that my website has a zero tolerance for breach of data protection, anyone found doing so
+				within our team or from the public will be prosicuted.
+				And for those who use my site or content as a means to bully or harrase others will has strong and
+				quick action taken to stop them in there tracks.</p>
+			<h6 class="footer-hdr">For more information see here -
+				<br><a class="footer-text" href="">Privacy Policy</a>
+				<br><a class="footer-text" href="">Terms of Use</a></h6>
+		</div>
+		<div class="col-sm-4 footerResize">
+			<h5 class="footer-hdr">Help</h5>
+			<p class="footer-text"> Having issues with some of the content posted, please let me know here -
+				<br><a href="#">Feedback Form!</a>
+				<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
+				<br><a href="#">Fans Forum!</a>
+			</p>
 		</div>
 	</footer>
 	<div class="modal" tabindex="-1" role="dialog" id="signupmodal">
@@ -269,9 +296,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
