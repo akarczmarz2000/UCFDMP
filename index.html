@@ -155,14 +155,7 @@
 			</p>
 		</div>
 	</div>
-    <script>
-    var screenQueryNormal = window.matchMedia("(max-width: 812px)")
-    footerResizeNormal(screenQueryNormal)
-    screenQueryNormal.addListener(footerResizeNormal)
-    var screenQuerySmall = window.matchMedia("(max-width: 812px)")
-    footerResizeSmall(screenQuerySmall)
-    screenQuerySmall.addListener(footerResizeSmall)
-    </script>
+    
 	<footer>
 		<div id="resizeSmall">
 			<div class="row">
@@ -325,5 +318,12 @@
 		</div>
 	</div>
 </body>
-
+<script>
+    var screenQueryNormal = window.matchMedia("(max-width: 812px)")
+    footerResizeNormal(screenQueryNormal)
+    screenQueryNormal.addListener(footerResizeNormal)
+    var screenQuerySmall = window.matchMedia("(max-width: 812px)")
+    footerResizeSmall(screenQuerySmall)
+    screenQuerySmall.addListener(footerResizeSmall)
+    </script>
 </html>
