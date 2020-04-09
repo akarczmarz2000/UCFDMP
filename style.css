@@ -229,6 +229,10 @@ footer{
     margin: 0;
 }
 
+.footer-items{
+    display: block;
+}
+
 .footer-text{
     color: white;
     font-family: 'Gotu', sans-serif
