@@ -1,5 +1,5 @@
 function footerResizeSmall(screenQuerySmall){
-    var footerResizeSmall = document.getElementsByClassName(footer-resize-small)
+    var footerResizeSmall = document.getElementsByClassName("footer-resize-small")
     if (screenQuerySmall.matches){
         footerResizeSmall.style.display = "none";
     }else{
@@ -8,7 +8,7 @@ function footerResizeSmall(screenQuerySmall){
 }
 
 function footerResizeNormal(screenQueryNormal){
-    var footerResizeNormal = document.getElementsByClassName(footer-resize-normal)
+    var footerResizeNormal = document.getElementsByClassName("footer-resize-normal")
     if (screenQueryNormal.matches){
         footerResizeNormal.style.display = "none";
     }else{
