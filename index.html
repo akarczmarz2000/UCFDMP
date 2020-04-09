@@ -18,7 +18,7 @@
 	<!---JavaScript Sources Links--->
 	<script src="assets/js/lightDarkMode.js"></script>
 	<script src="assets/js/sideNavMenu.js"></script>
-    <script src="assets/js/footerResize.js"></script>
+	<script src="assets/js/footerResize.js"></script>
 	<!---Side Navigation Menu--->
 	<div id="mySidenav" class="side-nav">
 		<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
@@ -155,7 +155,7 @@
 			</p>
 		</div>
 	</div>
-    
+
 	<footer>
 		<div id="resizeSmall">
 			<div class="row footer-padding">
@@ -188,11 +188,15 @@
 					</li>
 				</ul>
 				<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
-				<br><a class="footer-text" href="#">Privacy Policy</a>
-				<br><br><a class="footer-text" href="#">Terms of Use</a>
-				<br><h5 class="footer-hdr">Help</h5>
-				<br><a class="footer-text" href="#">Feedback Form!</a>
-				<br><a class="footer-text" href="#">Fans Forum!</a>
+				<div>
+					<a class="footer-text" href="#">Privacy Policy</a>
+					<a class="footer-text" href="#">Terms of Use</a>
+				</div>
+				<h5 class="footer-hdr">Help</h5>
+				<div>
+					<a class="footer-text" href="#">Feedback Form!</a>
+					<a class="footer-text" href="#">Fans Forum!</a>
+				</div>
 			</div>
 
 		</div>
@@ -319,11 +323,12 @@
 	</div>
 </body>
 <script>
-    var screenQueryNormal = window.matchMedia("(max-width: 812px)")
+	var screenQueryNormal = window.matchMedia("(max-width: 812px)")
     footerResizeNormal(screenQueryNormal)
     screenQueryNormal.addListener(footerResizeNormal)
     var screenQuerySmall = window.matchMedia("(max-width: 812px)")
     footerResizeSmall(screenQuerySmall)
     screenQuerySmall.addListener(footerResizeSmall)
-    </script>
+</script>
+
 </html>
