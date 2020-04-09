@@ -154,6 +154,14 @@
 			</p>
 		</div>
 	</div>
+    <script>
+    var screenQueryNormal = window.matchMedia("(max-width: 700px)")
+    footerResizeNormal(screenQueryNormal)
+    screenQueryNormal.addListener(footerResize)
+    var screenQuerySmall = window.matchMedia("(max-width: 700px)")
+    footerResizeSmall(screenQuerySmall)
+    screenQuerySmall.addListener(footerResize)
+    </script>
 	<footer>
 		<div class="footer-resize-small">
 			<div class="row">
@@ -194,7 +202,7 @@
 			</div>
 
 		</div>
-		<div class="footer-resize">
+		<div class="footer-resize-normal">
 			<div class="row">
 				<div class="col-sm-4">
 					<h5 class="footer-hdr">Social</h5>

@@ -296,6 +296,9 @@ footer{
 .footer-resize-small{
     display: none;
 }
+.footer-resize-normal{
+    display: none;
+}
 
 /*Media Query*/
 
@@ -370,9 +373,6 @@ footer{
     }
     .body-text{
         font-size: 20px;
-    }
-    .footer-hide-sm-scn{
-        display: none;
     }
 }
 
@@ -525,8 +525,5 @@ footer{
     .l-d-btn-container{
         left: 135px;
         bottom: 0px;
-    }
-    .footer-resize{
-        display: inline;
     }
 }
