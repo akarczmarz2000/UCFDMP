@@ -293,7 +293,7 @@ footer{
     padding: 20px;
 }
 
-.footer-small-screen{
+.footer-resize-small{
     display: none;
 }
 
@@ -526,7 +526,7 @@ footer{
         left: 135px;
         bottom: 0px;
     }
-    .footer-small-screen{
+    .footer-resize{
         display: inline;
     }
 }
