@@ -244,6 +244,10 @@ footer{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.footer-padding{
+    margin: 10px;
+}
+
 .small-print{
 	font-size: 15px;
 }
