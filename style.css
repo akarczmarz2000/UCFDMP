@@ -239,6 +239,10 @@ footer{
     font-family: 'Gotu', sans-serif
 }
 
+.footer-list{
+    list-style: none;
+}
+
 .footer-hdr{
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
