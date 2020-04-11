@@ -1,4 +1,4 @@
-function pageTransition{
+/*function pageTransition{
     var btn = document.getElementById("btn-click");
     //var sect1 = document.getElementById("sect");
     var morph = document.getElementById("morph");
@@ -14,4 +14,4 @@ function pageTransition{
         loop: false,
         //autoplay: false,
     })
-}
+}*/
