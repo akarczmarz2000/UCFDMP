@@ -170,16 +170,6 @@ html.transition *:after {
     margin-top: 6vw;
 }
 
-.home{
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.home{
-    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
-}
-
 html{
     --bg: #fcfcfc;
     --bg-panel: #ebebeb;
