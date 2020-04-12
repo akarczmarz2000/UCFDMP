@@ -1,14 +1,4 @@
 /*Page Transition*/
-#morph{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    pointer-events: none;
-    z-index: 1;
-}
-
 
 /*Side Navigation Menu */
 .side-nav{
@@ -180,6 +170,16 @@ html.transition *:after {
     margin-top: 6vw;
 }
 
+.home{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.home{
+    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+}
+
 html{
     --bg: #fcfcfc;
     --bg-panel: #ebebeb;
@@ -234,6 +234,44 @@ body{
     font-family: 'Gotu', sans-serif;
 }
 
+.txt-shadow{
+	background-color: #000000ba;
+}
+
+.divider{
+	width: 100%;
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Progress Bars Feats Page*/
+
+.progress-bar{
+	color: #efff00;
+}
+
+.bg-success{
+	color: #FF3B28;
+}
+
+.bg-warning{
+	color: #C064EB;
+}
+
+.bg-shooter{
+	color: #FFE487;
+}
+
+.bg-info{
+	color: #FF8159;
+}
+
+.prog-bar-container{
+	height: 2rem;
+	font-size: 1.1rem;
+}
+
 /*Footer*/
 footer{
     background-color: #202020;
@@ -285,6 +323,14 @@ footer{
 	margin-right: 5px;
 }
 
+.fan-forum{
+	width: 90%;
+	border: 10px;
+	border-style: solid;
+	border-radius: 23px;
+	border-color: #202020;
+}
+
 .fa-facebook{
 	color: #2C76FF;
 }
@@ -318,6 +364,35 @@ footer{
 }
 .footer-resize-normal{
     display: none;
+}
+
+/*Feedback Form*/
+
+.feedback{
+	margin: 10px;
+}
+
+.form-note{
+	color: #b5b5b5;
+	text-align: center;
+	margin: 0;
+}
+
+/*Modal*/
+
+.modal-style{
+	width: 340px;
+}
+
+.btn--style{
+    font-weight: bold;
+    border-radius: 23px;
+    width: 150px;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*Media Query*/

@@ -1,536 +1,824 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/5c3d3d9c4a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		integrity="sha256-c+C87jupO1otD1I5uyxV68WmSLCqtIoNlcHLXtzLCT0=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/lightDarkToggle.js"></script>
+	<title>A-JokerXD - Home</title>
+	<!---CDN for Jquery--->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<!---Link to stylesheets; Bootstrap, Font Awesome and Google Fonts--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sketchy/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="../style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto+Condensed:ital@1&display=swap"
+		rel="stylesheet">
+	<!---JavaScript Sources Links--->
+	<!--<script src="pageTransition.js"></script>-->
+	<script src="../assets/js/lightDarkMode.js"></script>
+	<script src="../assets/js/sideNavMenu.js"></script>
+	<script src="../assets/js/footerResize.js"></script>
+	<!---Side Navigation Menu--->
+	<div id="mySidenav" class="side-nav">
+		<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+		<a class="active-page" href="../index.html">Home <i class="fas fa-home"></i></a>
+		<a href="./about.html">About <i class="fas fa-address-card"></i></a>
+		<!---Page Index Dropdown Menu--->
+		<div class="dropdown">
+			<button class="drop-btn"><i class="fas fa-chevron-circle-down"></i></button>
+			<div class="dropdown-content">
+				<a href="#whatshere">What's Here For You? <i class="fas fa-map-marker-alt"></i></a>
+				<a href="#aboutme">Some Stuff About Me <i class="far fa-address-card"></i></a>
+				<a href="#gaming">My Gaming <i class="fas fa-headset"></i></a>
+				<a href="#chat">Let's Chat <i class="fas fa-comments"></i></a>
+			</div>
+		</div>
+		<!---Pagge Index Dropdown Menu End--->
+		<a href="./gaming.html">Gaming <i class="fas fa-headset"></i></a>
+		<a href="./feats.html">Feats <i class="fas fa-trophy"></i></a>
+		<a href="./contact.html">Contact <i class="fas fa-file-signature"></i></a>
+	</div>
+	<div class="row hdr">
+		<div class="col-2">
+			<button class="nav-btn" onclick="openNav()">Open</button>
+		</div>
+		<!---Side Navigation Menu End--->
+		<!---Page Title--->
+		<div class="col-8">
+			<h1 class="top-hdr">A-JokerXD</h1>
+			<!---Light/Dark Mode Button--->
+			<div class="l-d-btn-container">
+				<div class="l-d-name-pos">
+					<p class="l-d-name">Light/Dark</p>
+				</div>
+				<input type="checkbox" id="switch" name="theme" onclick="lightDarkMode()">
+				<label for="switch">Toggle</label>
+			</div>
+			<!---Light/Dark Mode Button End--->
+		</div>
+		<div class="col-2">
+			<div class="fan-login-container">
+				<button class="fan-login" data-toggle="modal" data-target="#signupmodal">Sign up</button>
+				<button class="fan-login" data-toggle="modal" data-target="#loginmodal">Login</button>
+			</div>
+		</div>
+	</div>
 </head>
 
 <body>
-	<header>
-		<!--- Navigation Section --->
-		<div class="row no-gutters">
-			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#loginmodal">Login</button>
-			<!---Tablet/Phone Signup/Login Buttons--->
-			<a href="../index.html" class="col-md-2 logo">
-				<!---Logo that directs to the home page--->
-			</a>
-
-			<!--- Name and Navigation --->
-			<div class="col-md-8 sm-sc-pos">
-				<div class="row no-gutters">
-					<div class="col heading">
-						<h1>A-JokerXD</h1>
+	<main data-router-wrapper>
+		<section data-router-view="home" class="home">
+			<div class="home-content">
+				<div class="l-d-container">
+					<a name="skills"></a>
+					<h1 class="body-hdr">My skill, I think?</h1>
+				</div>
+				<div class="l-d-container">
+					<div class="body-text">
+						<p>This section shows my skill levels as I view them against each other. Just so you've got an
+							idea
+							what your getting into depending on what your watching, could be me failing for hours, quite
+							funny I might say.
+							Or me doing some very silly things to show off (I hope I don't mess that up hahaha)</p>
+						<div class="prog-bar-container">
+							<div class="progress-bar progress-bar-animated progress-bar-striped bg-warning"
+								role="progressbar" style="width: 80%" aria-valuenow="20" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="txt-shadow">Roleplay</div>
+							</div>
+							<div class="progress-bar progress-bar-animated progress-bar-striped bg-shooter"
+								role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="txt-shadow">Shooters</div>
+							</div>
+							<div class="progress-bar progress-bar-animated progress-bar-striped bg-success"
+								role="progressbar" style="width: 50%" aria-valuenow="30" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="txt-shadow">Strategy</div>
+							</div>
+							<div class="progress-bar progress-bar-animated progress-bar-striped bg-info"
+								role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="txt-shadow">Puzzle</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!--- Navigation Section --->
-				<div class="row no-gutters">
+				<div class="l-d-container">
+					<a name="shooters"></a>
+					<h5 class="body-hdr">Shooters</h5>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+							<div class="txt-shadow">Left Flick</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+							<div class="txt-shadow">Right Flick</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 83%">
+							<div class="txt-shadow">Click Tracing</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 59%">
+							<div class="txt-shadow">Strafe Aiming</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
+							<div class="txt-shadow">Tracking</div>
+						</div>
+					</div>
+					<br>
+					<a name="strategy"></a>
+					<h5 class="body-hdr">Strategy</h5>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 62%">
+							<div class="txt-shadow">Troop Movement</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+							<div class="txt-shadow">Settlement Building</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+							<div class="txt-shadow">Conquering</div>
+						</div>
+					</div>
+					<br>
+					<a name="puzzle"></a>
+					<h5 class="body-hdr">Puzzle</h5>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 43%">
+							<div class="txt-shadow">Speed</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 24%">
+							<div class="txt-shadow">Comprehension</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 56%">
+							<div class="txt-shadow">Efficiency</div>
+						</div>
+					</div>
+					<br>
+					<a name="roleplay"></a>
+					<h5 class="body-hdr">Roleplay</h5>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<div class="txt-shadow">Character
+								Building/Immersion</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<div class="txt-shadow">Survial</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 83%">
+							<div class="txt-shadow">Adventure</div>
+						</div>
+					</div>
+					<br>
+					<div class="prog-bar-container">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+							aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							<div class="txt-shadow">Combat</div>
+						</div>
+					</div>
+				</div>
+				<!---Achievement Section--->
+				<a name="achievements"></a>
+				<div class="l-d-container">
+					<h1 class="body-hdr">What am I proud off!</h1>
+				</div>
+				<div class="l-d-container row no-gutters">
 					<div class="col">
-						<ul id="nav" class="list-inline navcontainer">
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="../index.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-home"></i><span>Home</span></a>
+						<!---Divider image to seperate each game--->
+						<img class="divider" src="../assets/img/achievement-divider.jpg">
+						<a name="game1"></a>
+						<!---This will have the game title--->
+						<h2 class="body-hdr">Game Title</h2>
+						<!---This will have the platform pc, xbox, playstation ect--->
+						<h4 class="body-hdr">Platform</h4>
+					</div>
+					<ul class="list-inline">
+						<div class="row">
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
 							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="about.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-address-book"></i><span>About</span></a>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
 							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="gaming.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-gamepad"></i><span>Gaming</span></a>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
 							</li>
-                            <li class="col-6 col-sm-2 list-inline-item navitem">
-                            <a href="feats.html" class="hvr-sweep-to-bottom"><i class="fas fa-trophy"></i><span>Feats</span></a>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
 							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="contact.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-headset"></i><span>Contact</span></a>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+						</div>
+					</ul>
+					<div class="col">
+						<!---Divider image to seperate each game--->
+						<img class="divider" src="../assets/img/achievement-divider.jpg">
+						<a name="game2"></a>
+						<!---This will have the game title--->
+						<h2 class="body-hdr">Game Title</h2>
+						<!---This will have the platform pc, xbox, playstation ect--->
+						<h4 class="body-hdr">Platform</h4>
+					</div>
+					<ul class="list-inline">
+						<div class="row">
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+						</div>
+					</ul>
+					<div class="col">
+						<!---Divider image to seperate each game--->
+						<img class="divider" src="../assets/img/achievement-divider.jpg">
+						<a name="game3"></a>
+						<!---This will have the game title--->
+						<h2 class="body-hdr">Game Title</h2>
+						<!---This will have the platform pc, xbox, playstation ect--->
+						<h4 class="body-hdr">Platform</h4>
+					</div>
+					<ul class="list-inline">
+						<div class="row">
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+							<li class="list-inline-item col-6 col-sm-4">
+								<div class="body-text">
+									<!---The Name of the achievement will be in here--->
+									<p>Achievement Name: Example Achievement</p>
+									<!---This is an example image that in a full version would have the specific achievements picture, 
+                                the image is wrapped in a anchor tag that could lead to the games achievement page--->
+									<a href="#"
+										target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
+										<!---Flavour Text on what the achievement is, how long it took for me to achieve this and
+									how others can do it to.--->
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+											quisquam,
+											vitae suscipit autem delectus sed distinctio quae quod unde earum quis
+											accusamus. Reiciendis sequi consequuntur numquam est perspiciatis porro.
+										</p>
+								</div>
+							</li>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div id="resizeSmall">
+			<div class="row footer-padding">
+				<div class="col-12">
+					<h5 class="footer-hdr">Social</h5>
+					<div class="row">
+						<ul class="list-inline icon">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
+									<i class="fab fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://twitter.com/AJokerxd">
+									<i class="fab fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.instagram.com/ajokerxd/">
+									<i class="fab fa-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank"
+									href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
+									<i class="fab fa-youtube" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
+									<i class="fab fa-twitch"></i>
+								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="row small-move">
-				<div class="col">
-					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#loginmodal">Login</button>
-					<!---Computer Signup/Login Button-->
+				<div class="row">
+					<div class="col-12">
+						<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
+					</div>
+					<div class="row">
+						<ul class="footer-list">
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Privacy Policy</a>
+								</li>
+							</div>
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Terms of Use</a>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h5 class="footer-hdr">Help</h5>
+					</div>
+					<div class="row">
+						<ul class="footer-list">
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Feedback Form!</a>
+								</li>
+							</div>
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Fans Forum!</a>
+								</li>
+							</div>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</header>
-	<section class="row content">
-		<div class="col-md-2 picture">
-			<!---Side image and Index--->
-			<div class="index navbar sticky-top">
-				<a class="navbar-brand" href="#skills">
-					<h4 class="index-title">My Skills, I think?</h4>
-				</a>
-				<ul class="index-sm">
-					<li><a class="navbar-brand" href="#shooters">
-							<h6 class="index-item">Shooters</h6>
-						</a></li>
-					<li><a class="navbar-brand" href="#strategy">
-							<h6 class="index-item">Strategy</h6>
-						</a></li>
-					<li><a class="navbar-brand" href="#puzzle">
-							<h6 class="index-item">Puzzle</h6>
-						</a></li>
-					<li><a class="navbar-brand" href="#roleplay">
-							<h6 class="index-item">Roleplay</h6>
-						</a></li>
-				</ul>
-				<h4 class="index-toggle-title">Toggle Light/Dark Mode</h4>
-				<button onclick="myFunction()">Light/Dark</button>
-			</div>
-		</div>
-		<!---Side image for computer and tablet (left)--->
-		<div class="col-md-8">
-			<div class="row no-gutters area-title">
-				<a name="skills"></a>
-				<h1 class="header-background">My skill, I think?</h1>
-			</div>
-			<div class="progress-sm-sc-pos">
-				<!---Progress bar container--->
-				<div>
-					<p>This section shows my skill levels as I view them against each other. Just so you've got an idea
-						what your getting into depending on what your watching, could be me failing for hours, quite
-						funny I might say.
-						Or me doing some very silly things to show off (I hope I don't mess that up hahaha)</p>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" role="progressbar"
-						style="width: 80%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><div class="header-background">Roleplay</div></div>
-					<div class="progress-bar progress-bar-animated progress-bar-striped bg-shooter" role="progressbar"
-						style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"><div class="header-background">Shooters</div></div>
-					<div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar"
-						style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><div class="header-background">Strategy</div></div>
-					<div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar"
-						style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><div class="header-background">Puzzle</div></div>
-				</div>
-				<br>
-				<a name="shooters"></a>
-				<h5 class="hdr-color">Shooters</h5>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><div class="header-background">Left Flick</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"><div class="header-background">Right Flick</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 83%"><div class="header-background">Click Tracing</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 59%"><div class="header-background">Strafe Aiming</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 47%"><div class="header-background">Tracking</div></div>
-				</div>
-				<br>
-				<a name="strategy"></a>
-				<h5 class="hdr-color">Strategy</h5>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 62%"><div class="header-background">Troop Movement</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 87%"><div class="header-background">Settlement Building</div>
-					</div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 57%"><div class="header-background">Conquering</div></div>
-				</div>
-				<br>
-				<a name="puzzle"></a>
-				<h5 class="hdr-color">Puzzle</h5>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 43%"><div class="header-background">Speed</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 24%"><div class="header-background">Comprehension</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 56%"><div class="header-background">Efficiency</div></div>
-				</div>
-				<br>
-				<a name="roleplay"></a>
-				<h5 class="hdr-color">Roleplay</h5>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><div class="header-background">Character
-						Building/Immersion</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><div class="header-background">Survial</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 83%"><div class="header-background">Adventure</div></div>
-				</div>
-				<br>
-				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><div class="header-background">Combat</div></div>
-				</div>
-				<br>
-	</div>
-				<a name="achievements"></a>
-				<div class="row no-gutters area-title">
-					<h1 class="header-background">What am I proud off!</h1>
-				</div>
-				<div class="achievement-text row no-gutters">
-					<!---Achievement Section--->
-					<div class="col">
-						<img class="game-divider" src="../assets/img/achievement-divider.jpg">
-						<!---Divider for each game with it's title and logo--->
-						<a name="game1"></a>
-						<h2>Game Title</h2>
-						<h4>Platform I play it on</h4>
-					</div>
-					<ul class="list-inline">
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
+		<div id="resizeNormal">
+			<div class="row footer-padding">
+				<div class="col-sm-4">
+					<h5 class="footer-hdr">Social</h5>
+					<ul class="list-inline icon">
+						<li class="list-inline-item">
+							<h6 class="footer-text">@AJokerXDArtnCrafts
+								<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
+									<i class="fab fa-facebook" aria-hidden="true"></i>
+								</a>
+							</h6>
 						</li>
-						<!---The way this is layed out is so that you see the achievement name and then the image for it so they can see and 
-		relate quickly weather they also have achieved it before reading about it--->
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
+						<li class="list-inline-item">
+							<h6 class="footer-text">@AJokerxd
+								<a target="_blank" href="https://twitter.com/AJokerxd">
+									<i class="fab fa-twitter" aria-hidden="true"></i>
+								</a>
+							</h6>
 						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
+						<li class="list-inline-item">
+							<h6 class="footer-text">ajokerxd
+								<a target="_blank" href="https://www.instagram.com/ajokerxd/">
+									<i class="fab fa-instagram" aria-hidden="true"></i>
+								</a>
+							</h6>
 						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
+						<li class="list-inline-item">
+							<h6 class="footer-text">A-JokerXD
+								<a target="_blank"
+									href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
+									<i class="fab fa-youtube" aria-hidden="true"></i>
+								</a>
+							</h6>
 						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-					</ul>
-					<div class="col">
-						<img class="game-divider" src="../assets/img/achievement-divider.jpg">
-						<!---Divider for each game with it's title and logo--->
-						<a name="game2"></a>
-						<h2>Game Title</h2>
-						<h4>Platform I play it on</h4>
-					</div>
-					<ul class="list-inline">
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<!---The way this is layed out is so that you see the achievement name and then the image for it so they can see and 
-		relate quickly weather they also have achieved it before reading about it--->
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-					</ul>
-					<div class="col">
-						<img class="game-divider" src="../assets/img/achievement-divider.jpg">
-						<!---Divider for each game with it's title and logo--->
-						<a name="game3"></a>
-						<h2>Game Title</h2>
-						<h4>Platform I play it on</h4>
-					</div>
-					<ul class="list-inline">
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<!---The way this is layed out is so that you see the achievement name and then the image for it so they can see and 
-		relate quickly weather they also have achieved it before reading about it--->
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
-						</li>
-						<li class="list-inline-item col-6 col-sm-4">
-							<p>Achievement Name:</p>
-							<a href="#"
-								target="_blank"><img src="../assets/img/warframe-achievement.jpg" class="achievement-logo"></a>
-								<p>Flavour Text on what the achievement is how long it took for me to achieve this and
-									how others can do it to.
-									The image is wrapped in a anchor tag that could lead to the games achievement page
-								</p>
+						<li class="list-inline-item">
+							<h6 class="footer-text">AJokerXDYouTube
+								<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
+									<i class="fab fa-twitch"></i>
+								</a>
+							</h6>
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div class="col-md-2 picture2"></div>
-			<!---Side image for computer and tablet (right)--->
-	</section>
-	<footer class="container-fluid">
-		<div id="footer-details" class="row">
-			<div class="col-sm-4">
-				<h5 class="small-header">Privacy Policy and Terms of Use</h5>
-				<p class="small-print small-text sm-sc-policy">Here I care about my fans and your well being so I make
-					it my job to make sure that your safety is my upmost concern.
-					That mean that my website has a zero tolerance for breach of data protection, anyone found doing so
-					within our team or from the public will be prosicuted.
-					And for those who use my site or content as a means to bully or harrase others will has strong and
-					quick action taken to stop them in there tracks.</p>
-				<h6 class="small-header">For more information see here -
-					<br><a class="small-text" href="">Privacy Policy</a>
-					<br><a class="small-text" href="">Terms of Use</a></h6>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="small-header">Help</h5>
-				<p class="small-text"> Having issues with some of the content posted, please let me know here -
-					<br><a class="small-text" href="#">Feedback Form!</a>
-					<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
-					<br><a class="ss" href="#">Fans Forum!</a></p>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="small-header">Social</h5>
-				<ul class="list-inline icon">
-					<li class="list-inline-item">
-						<h6>@AJokerXDArtnCrafts
-							<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
-								<i id="facebook" class="fab fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>@AJokerxd
-							<a target="_blank" href="https://twitter.com/AJokerxd">
-								<i id="twitter" class="fab fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>ajokerxd
-							<a target="_blank" href="https://www.instagram.com/ajokerxd/">
-								<i id="instagram" class="fab fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>A-JokerXD
-							<a target="_blank" href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>AJokerXDYouTube
-							<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
-								<i id="twitch" class="fab fa-twitch"></i>
-								<span class="sr-only">Twitch</span>
-							</a>
-						</h6>
-					</li>
-				</ul>
+				<div class="col-sm-4">
+					<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
+					<p class="footer-text">Here I care about my fans and your well being so I make it my job to
+						make sure that your safety is my upmost concern.
+						That mean that my website has a zero tolerance for breach of data protection, anyone found doing
+						so
+						within our team or from the public will be prosicuted.
+						And for those who use my site or content as a means to bully or harrase others will has strong
+						and
+						quick action taken to stop them in there tracks.</p>
+					<h6 class="footer-hdr">For more information see here -
+						<br><a class="footer-text" href="#">Privacy Policy</a>
+						<br><a class="footer-text" href="#">Terms of Use</a></h6>
+				</div>
+				<div class="col-sm-4">
+					<h5 class="footer-hdr">Help</h5>
+					<p class="footer-text"> Having issues with some of the content posted, please let me know here -
+						<br><a href="#">Feedback Form!</a>
+						<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
+						<br><a href="#">Fans Forum!</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -587,24 +875,14 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
 </body>
+<script>
+	var screenQueryNormal = window.matchMedia("(max-width: 812px)")
+    footerResizeNormal(screenQueryNormal)
+    screenQueryNormal.addListener(footerResizeNormal)
+    var screenQuerySmall = window.matchMedia("(max-width: 812px)")
+    footerResizeSmall(screenQuerySmall)
+    screenQuerySmall.addListener(footerResizeSmall)
+</script>
 
 </html>

@@ -1,0 +1,20 @@
+{
+  "name": "ucfdmp",
+  "version": "1.0.0",
+  "description": "This site is to help fans, potential fans and anyone else who may be interested in learning information and communicating with the site owner (a gamer who streams and does youtube). The site owner whats a way to communicate with there fans, potential fans and anyone else interested in giving feedback, they'd also like to have some information on the page about themselves for the users. The features I am looking to supply for the users is an area with information about the gamer as a person, where they are from what they like all the standard information from an about page. The next feature I'd like to supply is a history of the games they have played and streamed or recorded for youtube. Also on this page, I'd like to supply who they have recorded with for those who may be interested and have a record of the achievements they have managed to obtain in different games. Also possibly a progress bar compared to each other to show efficiency and confidence in different types of games. Another feature I'd like to supply is a forum for people to talk to each other and the site owner about the content already created and the content they'd like to see. Also in this area, I'd like to supply a place where criticism can be placed anonymously or with a name to the owner directly. Finally I'd like to supply a home page that ties this all together and with small samples of information to encourage users to venture further to find out more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akarczmarz2000/UCFDMP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akarczmarz2000/UCFDMP/issues"
+  },
+  "homepage": "https://github.com/akarczmarz2000/UCFDMP#readme",
+  "dependencies": {}
+}

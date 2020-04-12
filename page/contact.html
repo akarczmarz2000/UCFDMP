@@ -1,197 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/5c3d3d9c4a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		integrity="sha256-c+C87jupO1otD1I5uyxV68WmSLCqtIoNlcHLXtzLCT0=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/lightDarkToggle.js"></script>
+	<title>A-JokerXD - Home</title>
+	<!---CDN for Jquery--->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<!---Link to stylesheets; Bootstrap, Font Awesome and Google Fonts--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sketchy/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="../style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto+Condensed:ital@1&display=swap"
+		rel="stylesheet">
+	<!---JavaScript Sources Links--->
+	<!--<script src="pageTransition.js"></script>-->
+	<script src="../assets/js/lightDarkMode.js"></script>
+	<script src="../assets/js/sideNavMenu.js"></script>
+	<script src="../assets/js/footerResize.js"></script>
+	<!---Side Navigation Menu--->
+	<div id="mySidenav" class="side-nav">
+		<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+		<a class="active-page" href="../index.html">Home <i class="fas fa-home"></i></a>
+		<a href="./about.html">About <i class="fas fa-address-card"></i></a>
+		<a href="./gaming.html">Gaming <i class="fas fa-headset"></i></a>
+		<a href="./feats.html">Feats <i class="fas fa-trophy"></i></a>
+		<a href="./contact.html">Contact <i class="fas fa-file-signature"></i></a>
+		<!---There isn't a Page Index Dropdown Menu for this page as it isn't required--->
+	</div>
+	<div class="row hdr">
+		<div class="col-2">
+			<button class="nav-btn" onclick="openNav()">Open</button>
+		</div>
+		<!---Side Navigation Menu End--->
+		<!---Page Title--->
+		<div class="col-8">
+			<h1 class="top-hdr">A-JokerXD</h1>
+			<!---Light/Dark Mode Button--->
+			<div class="l-d-btn-container">
+				<div class="l-d-name-pos">
+					<p class="l-d-name">Light/Dark</p>
+				</div>
+				<input type="checkbox" id="switch" name="theme" onclick="lightDarkMode()">
+				<label for="switch">Toggle</label>
+			</div>
+			<!---Light/Dark Mode Button End--->
+		</div>
+		<div class="col-2">
+			<div class="fan-login-container">
+				<button class="fan-login" data-toggle="modal" data-target="#signupmodal">Sign up</button>
+				<button class="fan-login" data-toggle="modal" data-target="#loginmodal">Login</button>
+			</div>
+		</div>
+	</div>
 </head>
 
 <body>
-	<header>
-		<!--- Navigation Section --->
-		<div class="row no-gutters">
-			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-			<button class="btn btn-purple btn-cta btn-sm-pos" data-toggle="modal" data-target="#loginmodal">Login</button>
-			<a href="../index.html" class="col-md-2 logo">
-			</a>
-
-			<!--- Name, Title and Navigation --->
-			<div class="col-md-8 sm-sc-pos">
-				<div class="row no-gutters">
-					<div class="col heading">
-						<h1>A-JokerXD</h1>
+	<main data-router-wrapper>
+		<section data-router-view="home" class="home">
+			<div class="home-content">
+				<div class="l-d-container">
+					<h1 class="header-background">Fans Forum</h1>
+					<h4>Hey Guys!</h4>
+				</div>
+				<div class="body-text">
+					<p>So from here you can get to my fan forum, on there we can descuse what you like to see or
+						even plan time to play a few games together.
+						Although I just wanted to say before you go on here I have a zero-tolerance for breach
+						of privacy and bullying.
+						If anyone is found to be breach, distrabuting or anything along these lines of someone
+						else personal private information will be remove and prosecuted.
+						Anyone found or reported as bullying, harrasing or found to be being unfair and cruel in
+						any other way will have strong and quick action taken in response.</p>
+					<p> With this in mind I hope you have a pleasent experiance with the other fans and myself,
+						if you feel anything from the above statement is happening to you please don't be afraid
+						to private message me or another member of the team.</p>
+					<div class="l-d-container">
+						<a href="https://a-jokerxd.freeforums.net/" target="_blank">
+							<h5 class="body-hdr">Fan forum - "Playing to the hardest!"</h5>
+							<img class="fan-forum" src="../assets/img/fan-forum.png" alt="Fan Forum Home Page"></a>
 					</div>
 				</div>
-				<!--- Navigation Section --->
-				<div class="row no-gutters">
-					<div class="col">
-						<ul id="nav" class="list-inline navcontainer">
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="../index.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-home"></i><span>Home</span></a>
+				<div class="feedback-form">
+					<div class="row l-d-container">
+						<h1 class="header-background">Feedback Form</h1>
+					</div>
+					<form class="feedback">
+						<div class="form-group">
+							<label for="F-Name">First Name</label>
+							<input type="text" class="form-control" id="F-Name" placeholder="First name">
+				</div>
+							<div class="form-group">
+								<label for="L-Name">Last Name</label>
+								<input type="text" class="form-control" id="L-Name" placeholder="Last name">
+			</div>
+								<p class="form-note">The name is optional, I want people to feel welcome to give
+									feedback
+									and observations. Please only enter your name if you want to.</p>
+								<div class="form-group">
+									<label for="Email">Email address</label>
+									<input type="email" class="form-control email" id="Email" aria-describedby="email" placeholder="Enter email" required>
+									<small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-group">
+									<label for="Comment">Feedback</label>
+									<textarea class="form-control" id="Comment" rows="3" required>Please enter your issues in here, thank you.</textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div id="resizeSmall">
+			<div class="row footer-padding">
+				<div class="col-12">
+					<h5 class="footer-hdr">Social</h5>
+					<div class="row">
+						<ul class="list-inline icon">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
+									<i class="fab fa-facebook" aria-hidden="true"></i>
+								</a>
 							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="about.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-address-book"></i><span>About</span></a>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://twitter.com/AJokerxd">
+									<i class="fab fa-twitter" aria-hidden="true"></i>
+								</a>
 							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="gaming.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-gamepad"></i><span>Gaming</span></a>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.instagram.com/ajokerxd/">
+									<i class="fab fa-instagram" aria-hidden="true"></i>
+								</a>
 							</li>
-                            <li class="col-6 col-sm-2 list-inline-item navitem">
-                            <a href="feats.html" class="hvr-sweep-to-bottom"><i class="fas fa-trophy"></i><span>Feats</span></a>
+							<li class="list-inline-item">
+								<a target="_blank"
+									href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
+									<i class="fab fa-youtube" aria-hidden="true"></i>
+								</a>
 							</li>
-							<li class="col-6 col-sm-2 list-inline-item navitem">
-								<a href="contact.html"
-									class="hvr-sweep-to-bottom"><i class="fas fa-headset"></i><span>Contact</span></a>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
+									<i class="fab fa-twitch"></i>
+								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="row small-move">
-				<div class="col">
-					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#signupmodal">Sign up</button>
-					<button class="btn btn-purple btn-cta" data-toggle="modal" data-target="#loginmodal">Login</button>
+				<div class="row">
+					<div class="col-12">
+						<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
+					</div>
+					<div class="row">
+						<ul class="footer-list">
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Privacy Policy</a>
+								</li>
+							</div>
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Terms of Use</a>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h5 class="footer-hdr">Help</h5>
+					</div>
+					<div class="row">
+						<ul class="footer-list">
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Feedback Form!</a>
+								</li>
+							</div>
+							<div class="col-12">
+								<li>
+									<a class="footer-text" href="#">Fans Forum!</a>
+								</li>
+							</div>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</header>
-	<section class="row content">
-		<div class="col-md-2 picture">
-            <div class="index navbar sticky-top">
-				<h4 class="index-toggle-title">Toggle Light/Dark Mode</h4>
-				<button onclick="myFunction()">Light/Dark</button>
-			</div>
-        </div>
-		<div class="col-md-8">
-			<div class="forum-link">
-				<div class="row no-gutters area-title">
-					<h1 class="header-background">Fans Forum</h1>
+		<div id="resizeNormal">
+			<div class="row footer-padding">
+				<div class="col-sm-4">
+					<h5 class="footer-hdr">Social</h5>
+					<ul class="list-inline icon">
+						<li class="list-inline-item">
+							<h6 class="footer-text">@AJokerXDArtnCrafts
+								<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
+									<i class="fab fa-facebook" aria-hidden="true"></i>
+								</a>
+							</h6>
+						</li>
+						<li class="list-inline-item">
+							<h6 class="footer-text">@AJokerxd
+								<a target="_blank" href="https://twitter.com/AJokerxd">
+									<i class="fab fa-twitter" aria-hidden="true"></i>
+								</a>
+							</h6>
+						</li>
+						<li class="list-inline-item">
+							<h6 class="footer-text">ajokerxd
+								<a target="_blank" href="https://www.instagram.com/ajokerxd/">
+									<i class="fab fa-instagram" aria-hidden="true"></i>
+								</a>
+							</h6>
+						</li>
+						<li class="list-inline-item">
+							<h6 class="footer-text">A-JokerXD
+								<a target="_blank"
+									href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
+									<i class="fab fa-youtube" aria-hidden="true"></i>
+								</a>
+							</h6>
+						</li>
+						<li class="list-inline-item">
+							<h6 class="footer-text">AJokerXDYouTube
+								<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
+									<i class="fab fa-twitch"></i>
+								</a>
+							</h6>
+						</li>
+					</ul>
 				</div>
-				<div class="txt-center">
-					<h4>Hey Guys!</h4>
-							<p>So from here you can get to my fan forum, on there we can descuse what you like to see or
-								even plan time to play a few games together.
-								Although I just wanted to say before you go on here I have a zero-tolerance for breach
-								of privacy and bullying.
-								If anyone is found to be breach, distrabuting or anything along these lines of someone
-								else personal private information will be remove and prosecuted.
-								Anyone found or reported as bullying, harrasing or found to be being unfair and cruel in
-								any other way will have strong and quick action taken in response.</p>
-							<p> With this in mind I hope you have a pleasent experiance with the other fans and myself,
-								if you feel anything from the above statement is happening to you please don't be afraid
-								to private message me or another member of the team.</p>
-							<a href="https://a-jokerxd.freeforums.net/" target="_blank">
-								<h5 class="hdr-color">Fan forum - "Playing to the hardest!"</h5>
-								<img class="fan-forum" src="../assets/img/fan-forum.png" alt="Fan Forum Home Page"></a>
+				<div class="col-sm-4">
+					<h5 class="footer-hdr">Privacy Policy and Terms of Use</h5>
+					<p class="footer-text">Here I care about my fans and your well being so I make it my job to
+						make sure that your safety is my upmost concern.
+						That mean that my website has a zero tolerance for breach of data protection, anyone found doing
+						so
+						within our team or from the public will be prosicuted.
+						And for those who use my site or content as a means to bully or harrase others will has strong
+						and
+						quick action taken to stop them in there tracks.</p>
+					<h6 class="footer-hdr">For more information see here -
+						<br><a class="footer-text" href="#">Privacy Policy</a>
+						<br><a class="footer-text" href="#">Terms of Use</a></h6>
 				</div>
-			</div>
-			<div class="feedback-form">
-				<div class="row no-gutters area-title">
-					<h1 class="header-background">Feedback Form</h1>
+				<div class="col-sm-4">
+					<h5 class="footer-hdr">Help</h5>
+					<p class="footer-text"> Having issues with some of the content posted, please let me know here -
+						<br><a href="#">Feedback Form!</a>
+						<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
+						<br><a href="#">Fans Forum!</a>
+					</p>
 				</div>
-				<form class="feedback">
-					<div class="form-group">
-						<label for="F-Name">First Name</label>
-						<input type="text" class="form-control" id="F-Name" placeholder="First name">
-				</div>
-						<div class="form-group">
-							<label for="L-Name">Last Name</label>
-							<input type="text" class="form-control" id="L-Name" placeholder="Last name">
-			</div>
-							<p class="form-note">The name is optional, I want people to feel welcome to give feedback
-								and observations. Please only enter your name if you want to.</p>
-									<div class="form-group">
-										<label for="Email">Email address</label>
-										<input type="email" class="form-control email" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
-										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-									</div>
-									<div class="form-group">
-										<label for="Comment">Feedback</label>
-										<textarea class="form-control" id="Comment" rows="3" required>Please enter your issues in here, thank you.</textarea>
-									</div>
-									<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
-			</div>
-		</div>
-		<div class="col-md-2 picture2"></div>
-	</section>
-	<footer class="container-fluid">
-		<div id="footer-details" class="row">
-			<div class="col-sm-4">
-				<h5 class="small-header">Privacy Policy and Terms of Use</h5>
-				<p class="small-print small-text">Here I care about my fans and your well being so I make it my job to
-					make sure that your safety is my upmost concern.
-					That mean that my website has a zero tolerance for breach of data protection, anyone found doing so
-					within our team or from the public will be prosicuted.
-					And for those who use my site or content as a means to bully or harrase others will has strong and
-					quick action taken to stop them in there tracks.</p>
-						<h6 class="small-header">For more information see here -
-							<br><a class="small-text" href="">Privacy Policy</a>
-							<br><a class="small-text" href="">Terms of Use</a></h6>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="small-header">Help</h5>
-						<p class="small-text"> Having issues with some of the content posted, please let me know here -
-							<br><a class="small-text" href="#">Feedback Form!</a>
-							<br><br> Or if you'd just like to chat with me and other fans about future and current content come here -
-							<br><a class="ss" href="#">Fans Forum!</a>
-							</p>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="small-header">Social</h5>
-				<ul class="list-inline icon">
-					<li class="list-inline-item">
-						<h6>@AJokerXDArtnCrafts
-							<a target="_blank" href="https://www.facebook.com/AJokerXDArtnCraft/">
-								<i class="fab fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>@AJokerxd
-							<a target="_blank" href="https://twitter.com/AJokerxd">
-								<i class="fab fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>ajokerxd
-							<a target="_blank" href="https://www.instagram.com/ajokerxd/">
-								<i class="fab fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>A-JokerXD
-							<a target="_blank" href="https://www.youtube.com/channel/UC-Rmhn1NVXVAlxFVGnhR0mA?view_as=">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</h6>
-					</li>
-					<li class="list-inline-item">
-						<h6>AJokerXDYouTube
-							<a target="_blank" href="https://www.twitch.tv/ajokerxdyoutube">
-								<i class="fab fa-twitch"></i>
-								<span class="sr-only">Twitch</span>
-							</a>
-						</h6>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</footer>
@@ -209,7 +272,7 @@
 						<div class="form-group">
 							<label for="SignupEmail">Email address</label>
 							<input type="email" class="form-control" id="SignupEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
-							<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 						</div>
 						<div class="form-group">
 							<label for="newpassword">Password</label>
@@ -248,24 +311,14 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
 </body>
+<script>
+	var screenQueryNormal = window.matchMedia("(max-width: 812px)")
+    footerResizeNormal(screenQueryNormal)
+    screenQueryNormal.addListener(footerResizeNormal)
+    var screenQuerySmall = window.matchMedia("(max-width: 812px)")
+    footerResizeSmall(screenQuerySmall)
+    screenQuerySmall.addListener(footerResizeSmall)
+</script>
 
 </html>
