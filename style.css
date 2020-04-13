@@ -5,7 +5,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: #111;
@@ -89,6 +89,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 3;
 }
 
 .top-hdr{
@@ -228,17 +229,18 @@ body{
 	background-color: #000000ba;
 }
 
-.divider{
-	width: 100%;
-	display: block;
-    margin-right: auto;
-    margin-left: auto;
+.achievement-discription{
+    text-align: center;
+    border: solid;
+    margin-top: 5px;
 }
 
 /*Progress Bars Feats Page*/
 
 .progress-bar{
 	color: #efff00;
+    font-size: 3vw;
+    font-family: auto;
 }
 
 .bg-success{
@@ -257,9 +259,19 @@ body{
 	color: #FF8159;
 }
 
-.prog-bar-container{
-	height: 2rem;
-	font-size: 1.1rem;
+/*Images*/
+.achievement-logo{
+    width: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider{
+	width: 100%;
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*Footer*/
