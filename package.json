@@ -16,5 +16,7 @@
     "url": "https://github.com/akarczmarz2000/UCFDMP/issues"
   },
   "homepage": "https://github.com/akarczmarz2000/UCFDMP#readme",
-  "dependencies": {}
+  "dependencies": {
+    "swup": "^2.0.9"
+  }
 }
